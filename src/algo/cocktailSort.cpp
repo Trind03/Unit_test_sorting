@@ -1,7 +1,8 @@
+#include "./cocktailSort.h"
 #include <vector>
 
-template<typename T>
-int cocktailSort(std::vector<T> arr) {
+template<typename Type>
+std::vector<Type> cocktailSort(std::vector<Type> arr) {
     bool swapped = true;
     int sum = 0;
     int start = 0;
@@ -33,5 +34,5 @@ int cocktailSort(std::vector<T> arr) {
 
         ++start;
     }
-    return sum;
+    return arr;
 };

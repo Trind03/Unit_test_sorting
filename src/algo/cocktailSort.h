@@ -1,4 +1,4 @@
 #pragma once
+#include <vector>
 
-template<typename T>
-T cocktailSort(std::vector<T> arr);
+std::vector<int> cocktailSort(std::vector<int> arr);
