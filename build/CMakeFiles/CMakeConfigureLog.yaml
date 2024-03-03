@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.5+33de0b227 for .NET Framework
-      Build started 3/3/2024 5:14:15 PM.
+      Build started 3/3/2024 8:34:42 PM.
       
       Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\3.29.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.94
+      Time Elapsed 00:00:00.90
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.5+33de0b227 for .NET Framework
-      Build started 3/3/2024 5:14:16 PM.
+      Build started 3/3/2024 8:34:43 PM.
       
       Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\3.29.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.61
+      Time Elapsed 00:00:00.63
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-lmhk7u"
-      binary: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-lmhk7u"
+      source: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-y9i77t"
+      binary: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-y9i77t"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-lmhk7u'
+        Change Dir: 'C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-y9i77t'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c3863.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0094d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.5+33de0b227 for .NET Framework
-        Build started 3/3/2024 5:14:18 PM.
+        Build started 3/3/2024 8:34:45 PM.
         
-        Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmhk7u\\cmTC_c3863.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y9i77t\\cmTC_0094d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c3863.dir\\Debug\\".
+          Creating directory "cmTC_0094d.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmhk7u\\Debug\\".
-          Creating directory "cmTC_c3863.dir\\Debug\\cmTC_c3863.tlog\\".
+          Creating directory "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y9i77t\\Debug\\".
+          Creating directory "cmTC_0094d.dir\\Debug\\cmTC_0094d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c3863.dir\\Debug\\cmTC_c3863.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c3863.dir\\Debug\\cmTC_c3863.tlog\\unsuccessfulbuild".
+          Creating "cmTC_0094d.dir\\Debug\\cmTC_0094d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0094d.dir\\Debug\\cmTC_0094d.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3863.dir\\Debug\\\\" /Fd"cmTC_c3863.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0094d.dir\\Debug\\\\" /Fd"cmTC_0094d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c3863.dir\\Debug\\\\" /Fd"cmTC_c3863.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0094d.dir\\Debug\\\\" /Fd"cmTC_0094d.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmhk7u\\Debug\\cmTC_c3863.exe" /INCREMENTAL /ILK:"cmTC_c3863.dir\\Debug\\cmTC_c3863.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-lmhk7u/Debug/cmTC_c3863.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-lmhk7u/Debug/cmTC_c3863.lib" /MACHINE:X64  /machine:x64 cmTC_c3863.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c3863.vcxproj -> C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmhk7u\\Debug\\cmTC_c3863.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y9i77t\\Debug\\cmTC_0094d.exe" /INCREMENTAL /ILK:"cmTC_0094d.dir\\Debug\\cmTC_0094d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-y9i77t/Debug/cmTC_0094d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-y9i77t/Debug/cmTC_0094d.lib" /MACHINE:X64  /machine:x64 cmTC_0094d.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_0094d.vcxproj -> C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y9i77t\\Debug\\cmTC_0094d.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c3863.dir\\Debug\\cmTC_c3863.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c3863.dir\\Debug\\cmTC_c3863.tlog\\cmTC_c3863.lastbuildstate".
-        Done Building Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lmhk7u\\cmTC_c3863.vcxproj" (default targets).
+          Deleting file "cmTC_0094d.dir\\Debug\\cmTC_0094d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0094d.dir\\Debug\\cmTC_0094d.tlog\\cmTC_0094d.lastbuildstate".
+        Done Building Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y9i77t\\cmTC_0094d.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.57
+        Time Elapsed 00:00:00.65
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-fdfadu"
-      binary: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-fdfadu"
+      source: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-s5irey"
+      binary: "C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-s5irey"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -220,40 +220,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-fdfadu'
+        Change Dir: 'C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-s5irey'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5fc68.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4a51b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.5+33de0b227 for .NET Framework
-        Build started 3/3/2024 5:14:19 PM.
+        Build started 3/3/2024 8:34:46 PM.
         
-        Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdfadu\\cmTC_5fc68.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s5irey\\cmTC_4a51b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_5fc68.dir\\Debug\\".
+          Creating directory "cmTC_4a51b.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdfadu\\Debug\\".
-          Creating directory "cmTC_5fc68.dir\\Debug\\cmTC_5fc68.tlog\\".
+          Creating directory "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s5irey\\Debug\\".
+          Creating directory "cmTC_4a51b.dir\\Debug\\cmTC_4a51b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_5fc68.dir\\Debug\\cmTC_5fc68.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_5fc68.dir\\Debug\\cmTC_5fc68.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4a51b.dir\\Debug\\cmTC_4a51b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4a51b.dir\\Debug\\cmTC_4a51b.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fc68.dir\\Debug\\\\" /Fd"cmTC_5fc68.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a51b.dir\\Debug\\\\" /Fd"cmTC_4a51b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.39.33521 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5fc68.dir\\Debug\\\\" /Fd"cmTC_5fc68.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a51b.dir\\Debug\\\\" /Fd"cmTC_4a51b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdfadu\\Debug\\cmTC_5fc68.exe" /INCREMENTAL /ILK:"cmTC_5fc68.dir\\Debug\\cmTC_5fc68.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-fdfadu/Debug/cmTC_5fc68.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-fdfadu/Debug/cmTC_5fc68.lib" /MACHINE:X64  /machine:x64 cmTC_5fc68.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_5fc68.vcxproj -> C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdfadu\\Debug\\cmTC_5fc68.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s5irey\\Debug\\cmTC_4a51b.exe" /INCREMENTAL /ILK:"cmTC_4a51b.dir\\Debug\\cmTC_4a51b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-s5irey/Debug/cmTC_4a51b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/CMakeScratch/TryCompile-s5irey/Debug/cmTC_4a51b.lib" /MACHINE:X64  /machine:x64 cmTC_4a51b.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4a51b.vcxproj -> C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s5irey\\Debug\\cmTC_4a51b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_5fc68.dir\\Debug\\cmTC_5fc68.tlog\\unsuccessfulbuild".
-          Touching "cmTC_5fc68.dir\\Debug\\cmTC_5fc68.tlog\\cmTC_5fc68.lastbuildstate".
-        Done Building Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fdfadu\\cmTC_5fc68.vcxproj" (default targets).
+          Deleting file "cmTC_4a51b.dir\\Debug\\cmTC_4a51b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4a51b.dir\\Debug\\cmTC_4a51b.tlog\\cmTC_4a51b.lastbuildstate".
+        Done Building Project "C:\\Users\\Torstein\\Documents\\GitHub\\Unit_test_sorting\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s5irey\\cmTC_4a51b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.62
+        Time Elapsed 00:00:00.64
         
       exitCode: 0
   -
