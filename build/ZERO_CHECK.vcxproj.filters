@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Torstein\Documents\GitHub\Unit_test_sorting\build\CMakeFiles\250acac0d32f13fedfb736d54fc0ee1c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{88C6630C-423C-3348-A783-F7B16C2E5F61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
