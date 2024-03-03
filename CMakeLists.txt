@@ -4,3 +4,4 @@ project(sort)
 set(CXX_STANDARD 20)
 
 
+add_executable(sort toolkit.cpp main.cpp ./algo/cocktailSort.cpp)

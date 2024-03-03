@@ -1,0 +1,3 @@
+C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/sort.dir
+C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Torstein/Documents/GitHub/Unit_test_sorting/build/CMakeFiles/ZERO_CHECK.dir
