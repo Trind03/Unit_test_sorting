@@ -1,8 +1,8 @@
 #include "./cocktailSort.h"
 #include <vector>
 
-template<typename Type>
-std::vector<Type> cocktailSort(std::vector<Type> arr) {
+
+std::vector<int> cocktailSort(std::vector<int> arr) {
     bool swapped = true;
     int sum = 0;
     int start = 0;
