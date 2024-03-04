@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-std::vector<int> cocktailSort(std::vector<int> arr);
+void cocktailSort(std::vector<int> &arr);

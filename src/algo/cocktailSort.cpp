@@ -2,7 +2,8 @@
 #include <vector>
 
 
-std::vector<int> cocktailSort(std::vector<int> arr) {
+void cocktailSort(std::vector<int> &arr)
+{
     bool swapped = true;
     int sum = 0;
     int start = 0;
@@ -34,5 +35,4 @@ std::vector<int> cocktailSort(std::vector<int> arr) {
 
         ++start;
     }
-    return arr;
 };

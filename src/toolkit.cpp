@@ -1,7 +1,9 @@
 #include <iostream>
 #include <vector>
 
-void render(std::vector<int>array)
+void render(const char* message,std::vector<int>&array)
 {
+    std::cout << message;
     for(int arr : array) std::cout << arr << " - ";
+    std::cout << "\n";
 }

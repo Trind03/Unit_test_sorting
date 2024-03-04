@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-void render(std::vector<int>array);
+void render(const char* message,std::vector<int>&array);
