@@ -3,9 +3,15 @@ project(sort)
 
 set(CXX_STANDARD 20)
 
+# Add sub directories and add source paths.
 add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+include_directories(${cmake_SOURCE_DIR}/src)
+include_directories(${CMAKE_SOURCE_DIR}/src/algo)
 
-
-add_executable(Google_Tests_run test1.cpp test2.cpp)
-target_link_libraries(Google_Tests_run gtest gtest_main)
+add_executable(sort
+src/algo/cocktailSort.cpp
+src/toolkit.cpp
+src/main.cpp
+)
+target_link_libraries(sort gtest gtest_main)

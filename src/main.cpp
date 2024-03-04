@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
-#include "./algo/cocktailSort.h"
+#include "cocktailSort.h"
 #include "toolkit.h"
-
+#include <gtest/gtest.h>
 
 int main()
 {
