@@ -10,8 +10,9 @@ include_directories(${cmake_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/src/algo)
 
 add_executable(sort
-src/algo/cocktailSort.cpp
-src/toolkit.cpp
 src/main.cpp
+src/toolkit.cpp
+src/algo/cocktailSort.cpp
 )
+
 target_link_libraries(sort gtest gtest_main)
