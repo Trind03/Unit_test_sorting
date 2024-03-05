@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.29)
 project(sort)
 set(CXX_STANDARD 20)
 
@@ -12,6 +12,7 @@ add_executable(sort
 src/main.cpp
 src/toolkit.cpp
 src/algo/cocktailSort.cpp
+src/algo/boubleSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)
