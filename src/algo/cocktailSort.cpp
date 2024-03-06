@@ -1,7 +1,6 @@
 #include "./cocktailSort.h"
 #include <vector>
 
-
 void cocktailSort(std::vector<int> &arr)
 {
     bool swapped = true;
