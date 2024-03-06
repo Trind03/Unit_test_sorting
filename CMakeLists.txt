@@ -10,7 +10,7 @@ include_directories(${CMAKE_SOURCE_DIR}/src/algo)
 
 add_executable(sort
 src/main.cpp
-#src/toolkit.cpp
+src/toolkit.cpp
 src/algo/cocktailSort.cpp
 src/algo/boubleSort.cpp
 )

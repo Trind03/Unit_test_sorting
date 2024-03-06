@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "cocktailSort.h"
-#include "toolkit.cpp"
+#include "toolkit.h"
 #include <gtest/gtest.h>
 #include "boubleSort.h"
 
