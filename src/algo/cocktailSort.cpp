@@ -1,7 +1,14 @@
-#include "./cocktailSort.h"
+#include "cocktailSort.h"
 #include <vector>
 
-void Cocktailsort::cocktailSort(std::vector<int> arr)
+
+Cocktailsort::Cocktailsort()
+{
+    correct = {1,2,3,4,5,6,7,8,9};
+}
+
+
+void Cocktailsort::sort(std::vector<int> arr)
 {
     bool swapped = true;
     int sum = 0;
