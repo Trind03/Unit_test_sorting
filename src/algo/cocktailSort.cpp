@@ -1,7 +1,7 @@
 #include "./cocktailSort.h"
 #include <vector>
 
-void Cocktailsort::cocktailSort(std::vector<int> &arr)
+void Cocktailsort::cocktailSort(std::vector<int> arr)
 {
     bool swapped = true;
     int sum = 0;
@@ -38,4 +38,5 @@ void Cocktailsort::cocktailSort(std::vector<int> &arr)
         }
         ++start;
     }
+    generated = arr;
 };

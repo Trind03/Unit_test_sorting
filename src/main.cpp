@@ -15,10 +15,10 @@ TEST(Unit_cocktailSort,cocktailSort)
     sort.cocktailSort({4,7,2,9,5,3,1,6,8});
 
     std::cout << "cocktail Sort\n";
-    render("Predefined array -> ",sort.Sorted);   
-    render("Sorted array     -> ",sort.Sorted);  
+    render("Predefined array -> ",sort.generated);   
+    render("Sorted array     -> ",sort.generated);  
     
-    EXPECT_EQ(correct,sort.Sorted);
+    EXPECT_EQ(correct,sort.generated);
 }
 
 TEST(Unit_bubbleSort,bubbleSort)
