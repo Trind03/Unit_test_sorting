@@ -2,7 +2,7 @@
 #include <vector>
 #include "cocktailSort.h"
 #include <gtest/gtest.h>
-#include "bubblesort.h"
+#include "bubbleSort.h"
 
 
 std::ostream& operator<<(std::ostream &stream, std::vector<int>&array)
