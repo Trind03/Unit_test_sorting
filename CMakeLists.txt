@@ -3,7 +3,7 @@ project(sort)
 set(CXX_STANDARD 20)
 
 # Add sub directories and add source paths.
-add_subdirectory(library)
+add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 include_directories(${cmake_SOURCE_DIR}/src)
 include_directories(${CMAKE_SOURCE_DIR}/src/algo)
