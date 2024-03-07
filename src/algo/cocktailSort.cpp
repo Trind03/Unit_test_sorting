@@ -1,19 +1,22 @@
 #include "./cocktailSort.h"
 #include <vector>
 
-void cocktailSort(std::vector<int> &arr)
+void Cocktailsort::cocktailSort(std::vector<int> arr)
 {
     bool swapped = true;
     int sum = 0;
     int start = 0;
     int end = arr.size() - 1;
 
-    while (swapped) {
+    while (swapped)
+    {
         swapped = false;
 
         // Forward iteration
-        for (int i = start; i < end; ++i) {
-            if (arr[i] > arr[i + 1]) {
+        for (int i = start; i < end; ++i)
+        {
+            if (arr[i] > arr[i + 1])
+            {
                 std::swap(arr[i], arr[i + 1]);
                 swapped = true;
             }
@@ -25,13 +28,15 @@ void cocktailSort(std::vector<int> &arr)
         --end;
 
         // Backward iteration
-        for (int i = end - 1; i >= start; --i) {
-            if (arr[i] > arr[i + 1]) {
+        for (int i = end - 1; i >= start; --i)
+        {
+            if (arr[i] > arr[i + 1])
+            {
                 std::swap(arr[i], arr[i + 1]);
                 swapped = true;
             }
         }
-
         ++start;
     }
+    generated = arr;
 };

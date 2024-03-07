@@ -1,4 +1,8 @@
 #pragma once
 #include <vector>
 
-void cocktailSort(std::vector<int> &arr);
+struct Cocktailsort
+{
+    void cocktailSort(std::vector<int> arr);
+    std::vector<int>generated;
+};
