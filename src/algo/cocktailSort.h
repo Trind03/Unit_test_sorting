@@ -1,8 +1,12 @@
 #pragma once
 #include <vector>
-
+    
 struct Cocktailsort
 {
-    void cocktailSort(std::vector<int> arr);
-    std::vector<int>generated;
+    Cocktailsort();
+    void sort(std::vector<int> arr);
+
+    std::vector<int>(generated);
+    std::vector<int>(correct);
+
 };
