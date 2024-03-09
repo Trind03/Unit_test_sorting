@@ -16,5 +16,5 @@ void BubbleSort::sort(std::vector<int>(arr))
         for (ii = 0; ii < arr.capacity() - i - 1; ii++)
             if (arr[ii] > arr[ii + 1])
                 std::swap(arr[ii], arr[ii + 1]);
-    Generated = arr;
+    generated = arr;
 }

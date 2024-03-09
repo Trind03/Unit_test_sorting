@@ -14,6 +14,7 @@ add_executable(sort
 src/main.cpp
 src/algo/cocktailSort.cpp
 src/algo/bubblesort.cpp
+src/algo/selectionSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)
