@@ -6,6 +6,6 @@ struct BubbleSort
     BubbleSort();
     void sort(std::vector<int>(arr));
 
-    std::vector<int>Generated;
-    std::vector<int>(correct);
+    std::vector<int>generated;
+    std::vector<int>correct;
 };
