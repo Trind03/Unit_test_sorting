@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <future>
 #include <gtest/gtest.h>
 #include "cocktailSort.h"
 #include "bubbleSort.h"
@@ -32,5 +33,6 @@ TEST(Unit_bubbleSort,bubbleSort)
 int main(int argc, char *argv[])
 {
    testing::InitGoogleTest(&argc,argv);
-   return RUN_ALL_TESTS();
+   std::future<int>process = std::async(std::launch::async,RUN_ALL_TESTS);
+   return process.get();
 }
