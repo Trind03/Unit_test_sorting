@@ -2,9 +2,9 @@
 #include <vector>
 
 
-Cocktailsort::Cocktailsort()
+Cocktailsort::Cocktailsort(std::vector<int>Correct)
 {
-    correct = {1,2,3,4,5,6,7,8,9};
+    correct = Correct;
 }
 
 
@@ -45,5 +45,5 @@ void Cocktailsort::sort(std::vector<int> arr)
         }
         ++start;
     }
-    generated = arr;
+    this->generated = arr;
 };
