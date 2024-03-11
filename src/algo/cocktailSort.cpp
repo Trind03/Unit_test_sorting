@@ -5,7 +5,6 @@
 Cocktailsort::Cocktailsort(std::array<int,10>_correct) : correct(_correct)
 {}
 
-int getsize(std::array<int,10>arr) {return sizeof(arr) / 4;}
 
 void Cocktailsort::sort(std::array<int,10> Array)
 {
