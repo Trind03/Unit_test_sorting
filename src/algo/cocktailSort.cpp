@@ -1,19 +1,18 @@
 #include "cocktailSort.h"
-#include <vector>
+#include <array>
 
 
-Cocktailsort::Cocktailsort(std::vector<int>Correct)
-{
-    correct = Correct;
-}
+Cocktailsort::Cocktailsort(std::array<int,10>_correct) : correct(_correct)
+{}
 
+int getsize(std::array<int,10>arr) {return sizeof(arr) / 4;}
 
-void Cocktailsort::sort(std::vector<int> arr)
+void Cocktailsort::sort(std::array<int,10> Array)
 {
     bool swapped = true;
     int sum = 0;
     int start = 0;
-    int end = arr.size() - 1;
+    int end = Array.size() - 1;
 
     while (swapped)
     {
@@ -22,9 +21,9 @@ void Cocktailsort::sort(std::vector<int> arr)
         // Forward iteration
         for (int i = start; i < end; ++i)
         {
-            if (arr[i] > arr[i + 1])
+            if (Array[i] > Array[i + 1])
             {
-                std::swap(arr[i], arr[i + 1]);
+                std::swap(Array[i], Array[i + 1]);
                 swapped = true;
             }
         }
@@ -37,13 +36,13 @@ void Cocktailsort::sort(std::vector<int> arr)
         // Backward iteration
         for (int i = end - 1; i >= start; --i)
         {
-            if (arr[i] > arr[i + 1])
+            if (Array[i] > Array[i + 1])
             {
-                std::swap(arr[i], arr[i + 1]);
+                std::swap(Array[i], Array[i + 1]);
                 swapped = true;
             }
         }
         ++start;
     }
-    this->generated = arr;
+    this->generated = Array;
 };

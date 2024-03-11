@@ -1,11 +1,11 @@
 #pragma once
-#include <vector>
+#include <array>
 
 struct BubbleSort
 {
     BubbleSort();
-    void sort(std::vector<int>(arr));
+    void sort(std::array<int,10>arr);
 
-    std::vector<int>generated;
-    std::vector<int>correct;
+    std::array<int,10>generated;
+    std::array<int,10>correct;
 };
