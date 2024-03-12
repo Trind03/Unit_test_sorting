@@ -1,20 +1,18 @@
-#include <vector>
+#include <array>
 #include <utility>
 #include "selectionSort.h"
 
-SelectionSort::SelectionSort()
-{
-    correct = {1,2,3,4,5,6,7,8,9};
-};
+SelectionSort::SelectionSort(std::array<int,10>_correct) : correct(_correct)
+{};
 
-void SelectionSort::selectionSort(std::vector<int>(arr)) 
+void SelectionSort::sort(std::array<int,10>arr) 
 { 
 	int i, j, min_idx; 
 
-	for (i = 0; i < arr.capacity() - 1; i++) { 
+	for (i = 0; i < arr.size() - 1; i++) { 
 
 		min_idx = i; 
-		for (j = i + 1; j < arr.capacity(); j++) { 
+		for (j = i + 1; j < arr.size(); j++) { 
 			if (arr[j] < arr[min_idx]) 
 				min_idx = j; 
 		} 

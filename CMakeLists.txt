@@ -4,6 +4,7 @@ set(CXX_STANDARD 20)
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_BUILD_PARALLEL_LEVEL 4)
 
+
 # Add sub directories and add source paths.
 add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
