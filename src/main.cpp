@@ -23,6 +23,7 @@ std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
     return stream;
 }
 
+// Unit test for cocktailSort
 TEST(Unit_cocktailSort,cocktailSort)
 {
     Cocktailsort cocktailsort({0,1,2,3,4,5,6,7,8,9});
@@ -32,6 +33,8 @@ TEST(Unit_cocktailSort,cocktailSort)
     EXPECT_EQ(cocktailsort.correct,cocktailsort.generated);
 }
 
+
+// Unit test for bubbleSort
 TEST(Unit_bubbleSort,bubbleSort)
 {
     BubbleSort bubbleSort({0,1,2,3,4,5,6,7,8,9});
@@ -41,6 +44,7 @@ TEST(Unit_bubbleSort,bubbleSort)
     EXPECT_EQ(bubbleSort.correct,bubbleSort.generated);
 }
 
+// Unit test for selectionSort
 TEST(Unit_selectionSort,selectionSort)
 {
     SelectionSort selectionSort({0,1,2,3,4,5,6,7,8,9});
