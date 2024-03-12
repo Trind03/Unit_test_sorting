@@ -25,7 +25,7 @@ std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
 
 TEST(Unit_cocktailSort,cocktailSort)
 {
-    Cocktailsort cocktailsort({0,1,2,3,4,5,6,7,8,9}); // {4,7,2,9,5,3,1,6,8,0}
+    Cocktailsort cocktailsort({0,1,2,3,4,5,6,7,8,9});
     cocktailsort.sort({4,7,2,9,5,3,1,6,8,0});
     
     std::cout << cocktailsort.generated;
