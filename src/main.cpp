@@ -11,8 +11,8 @@ std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
     stream << "\n";
     for(int arr : array) stream << arr << " - ";
     stream << "\n";
-    
-    return (stream);
+
+    return stream;
 }
 
 TEST(Unit_cocktailSort,cocktailSort)
@@ -26,7 +26,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    BubbleSort bubbleSort;
+    BubbleSort bubbleSort({0,1,2,3,4,5,6,7,8,9});
     bubbleSort.sort({4,7,2,9,5,3,1,6,8,0});
 
     std::cout << bubbleSort.generated;
