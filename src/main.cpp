@@ -6,6 +6,14 @@
 #include "bubbleSort.h"
 #include "selectionSort.h"
 
+int main(int argc, char *argv[])
+{
+   testing::InitGoogleTest(&argc,argv);
+   std::future<int>process = std::async(std::launch::async,RUN_ALL_TESTS);
+   return process.get();
+}
+
+
 std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
 {
     stream << "\n";
@@ -33,9 +41,11 @@ TEST(Unit_bubbleSort,bubbleSort)
     EXPECT_EQ(bubbleSort.correct,bubbleSort.generated);
 }
 
-int main(int argc, char *argv[])
+TEST(Unit_selectionSort,selectionSort)
 {
-   testing::InitGoogleTest(&argc,argv);
-   std::future<int>process = std::async(std::launch::async,RUN_ALL_TESTS);
-   return process.get();
+    SelectionSort selectionSort({0,1,2,3,4,5,6,7,8,9});
+    selectionSort.sort({4,7,2,9,5,3,1,6,8,0});
+
+    std::cout << selectionSort.generated;
+    EXPECT_EQ(selectionSort.correct,selectionSort.generated);
 }
