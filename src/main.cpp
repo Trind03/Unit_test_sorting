@@ -6,7 +6,8 @@
 #include "bubbleSort.h"
 #include "selectionSort.h"
 
-std::array<int,10>TB_Sort = {4,7,2,9,5,3,1,6,8,0};
+const std::array<int,10>TB_Sort = {4,7,2,9,5,3,1,6,8,0};
+const std::array<int,10>Correct = {0,1,2,3,4,5,6,7,8,9};
 
 int main(int argc, char *argv[])
 {
@@ -29,7 +30,7 @@ std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
 TEST(Unit_cocktailSort,cocktailSort)
 {
 
-    Cocktailsort cocktailsort({0,1,2,3,4,5,6,7,8,9}); // {4,7,2,9,5,3,1,6,8,0}
+    Cocktailsort cocktailsort(Correct); // {4,7,2,9,5,3,1,6,8,0}
     cocktailsort.sort(TB_Sort);
     
     std::cout << cocktailsort.generated;
@@ -40,7 +41,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 /* Unit test for bubbleSort */
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    BubbleSort bubbleSort({0,1,2,3,4,5,6,7,8,9});
+    BubbleSort bubbleSort(Correct);
     bubbleSort.sort(TB_Sort);
 
     std::cout << bubbleSort.generated;
@@ -50,7 +51,7 @@ TEST(Unit_bubbleSort,bubbleSort)
 /* Unit test for selectionSort */
 TEST(Unit_selectionSort,selectionSort)
 {
-    SelectionSort selectionSort({0,1,2,3,4,5,6,7,8,9});
+    SelectionSort selectionSort(Correct);
     selectionSort.sort(TB_Sort);
 
     std::cout << selectionSort.generated;
