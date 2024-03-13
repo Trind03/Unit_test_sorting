@@ -8,5 +8,4 @@ struct Cocktailsort
 
     std::array<int,10>generated;
     std::array<int,10>correct;
-
 };
