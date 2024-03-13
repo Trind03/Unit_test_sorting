@@ -6,7 +6,7 @@
 #include "bubbleSort.h"
 #include "selectionSort.h"
 
-    std::array<int,10>TB_Sort = {4,7,2,9,5,3,1,6,8,0};
+std::array<int,10>TB_Sort = {4,7,2,9,5,3,1,6,8,0};
 
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     return process.get();
 }
 
-
+/* Overload for << to print out forted array */
 std::ostream& operator<<(std::ostream &stream, std::array<int,10>& array)
 {
     stream << "\n";
