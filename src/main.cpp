@@ -33,7 +33,6 @@ TEST(Unit_cocktailSort,cocktailSort)
     Cocktailsort cocktailsort(Correct); // {4,7,2,9,5,3,1,6,8,0}
     cocktailsort.sort(TB_Sort);
     
-    std::cout << cocktailsort.generated;
     EXPECT_EQ(cocktailsort.correct,cocktailsort.generated);
 }
 
@@ -44,7 +43,6 @@ TEST(Unit_bubbleSort,bubbleSort)
     BubbleSort bubbleSort(Correct);
     bubbleSort.sort(TB_Sort);
 
-    std::cout << bubbleSort.generated;
     EXPECT_EQ(bubbleSort.correct,bubbleSort.generated);
 }
 
@@ -54,6 +52,5 @@ TEST(Unit_selectionSort,selectionSort)
     SelectionSort selectionSort(Correct);
     selectionSort.sort(TB_Sort);
 
-    std::cout << selectionSort.generated;
     EXPECT_EQ(selectionSort.correct,selectionSort.generated);
 }
