@@ -1,17 +1,16 @@
 #include "cocktailSort.h"
-#include <array>
+#include <vector>
 
-
-Cocktailsort::Cocktailsort(std::array<int,10>_correct) : correct(_correct)
+Cocktailsort::Cocktailsort(std::vector<int>_correct) : correct(_correct)
 {}
 
 
-void Cocktailsort::sort(std::array<int,10> Array)
+void Cocktailsort::sort(std::vector<int> Array)
 {
     bool swapped = true;
     int sum = 0;
     int start = 0;
-    int end = Array.size() - 1;
+    int end = Array.capacity() - 1;
 
     while (swapped)
     {

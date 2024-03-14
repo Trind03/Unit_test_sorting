@@ -1,15 +1,15 @@
-#include <array>
+#include <vector>
 #include <utility>
 #include "selectionSort.h"
 
-SelectionSort::SelectionSort(std::array<int,10>_correct) : correct(_correct)
+SelectionSort::SelectionSort(std::vector<int>_correct) : correct(_correct)
 {};
 
-void SelectionSort::sort(std::array<int,10>arr) 
+void SelectionSort::sort(std::vector<int>arr) 
 { 
 	int i, j, min_idx; 
 
-	for (i = 0; i < arr.size() - 1; i++) { 
+	for (i = 0; i < arr.capacity() - 1; i++) { 
 
 		min_idx = i; 
 		for (j = i + 1; j < arr.size(); j++) { 

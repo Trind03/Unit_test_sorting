@@ -1,10 +1,12 @@
 #pragma once
+#include <vector>
 
 struct SelectionSort
 {
-    SelectionSort(std::array<int,10>_correct);
-    void sort(std::array<int,10>_correct);
 
-    std::array<int,10>generated;
-    std::array<int,10>correct;
+    SelectionSort(std::vector<int>_correct);
+    void sort(std::vector<int>_correct);
+
+    std::vector<int>generated;
+    std::vector<int>correct;
 };
