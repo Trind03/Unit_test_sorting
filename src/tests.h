@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 #include <gtest/gtest.h>
 #include "cocktailSort.h"
 #include "bubbleSort.h"
