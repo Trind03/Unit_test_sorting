@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <future>
+#include <memory>
 #include <gtest/gtest.h>
 #include "cocktailSort.h"
 #include "bubbleSort.h"
@@ -29,28 +30,27 @@ std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
 /* Unit test for cocktailSort */
 TEST(Unit_cocktailSort,cocktailSort)
 {
-
-    Cocktailsort cocktailsort(Correct); 
-    cocktailsort.sort(TB_Sort);
-    std::cout << cocktailsort.generated;
-    EXPECT_EQ(cocktailsort.correct,cocktailsort.generated);
+    std::shared_ptr<Cocktailsort>(cocktailsort) = std::make_shared<Cocktailsort>(Correct);
+    cocktailsort->sort(TB_Sort);
+    std::cout << cocktailsort->generated;
+    EXPECT_EQ(cocktailsort->correct,cocktailsort->generated);
 }
 
 
 /* Unit test for bubbleSort */
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    BubbleSort bubbleSort(Correct);
-    bubbleSort.sort(TB_Sort);
+    std::shared_ptr<BubbleSort>(bubbleSort) = std::make_shared<BubbleSort>(Correct);
+    bubbleSort->sort(TB_Sort);
 
-    EXPECT_EQ(bubbleSort.correct,bubbleSort.generated);
+    EXPECT_EQ(bubbleSort->correct,bubbleSort->generated);
 }
 
 /* Unit test for selectionSort */
 TEST(Unit_selectionSort,selectionSort)
 {
-    SelectionSort selectionSort(Correct);
-    selectionSort.sort(TB_Sort);
+    std::shared_ptr<SelectionSort>(selectionSort) = std::make_shared<SelectionSort>(Correct);
+    selectionSort->sort(TB_Sort);
 
-    EXPECT_EQ(selectionSort.correct,selectionSort.generated);
+    EXPECT_EQ(selectionSort->correct,selectionSort->generated);
 }
