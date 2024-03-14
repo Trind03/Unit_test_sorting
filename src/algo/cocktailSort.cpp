@@ -1,12 +1,12 @@
 #include "cocktailSort.h"
 #include <array>
+#define arraysize 10000
 
-
-Cocktailsort::Cocktailsort(std::array<int,10>_correct) : correct(_correct)
+Cocktailsort::Cocktailsort(std::array<int,arraysize>_correct) : correct(_correct)
 {}
 
 
-void Cocktailsort::sort(std::array<int,10> Array)
+void Cocktailsort::sort(std::array<int,arraysize> Array)
 {
     bool swapped = true;
     int sum = 0;

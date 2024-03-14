@@ -1,11 +1,12 @@
 #include <array>
 #include <utility>
 #include "selectionSort.h"
+#define arraysize 10000
 
-SelectionSort::SelectionSort(std::array<int,10>_correct) : correct(_correct)
+SelectionSort::SelectionSort(std::array<int,arraysize>_correct) : correct(_correct)
 {};
 
-void SelectionSort::sort(std::array<int,10>arr) 
+void SelectionSort::sort(std::array<int,arraysize>arr) 
 { 
 	int i, j, min_idx; 
 
