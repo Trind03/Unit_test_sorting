@@ -1,13 +1,12 @@
 #pragma once
-#define arraysize 10000
-
+#include <vector>
 
 struct SelectionSort
 {
 
-    SelectionSort(std::array<int,arraysize>_correct);
-    void sort(std::array<int,arraysize>_correct);
+    SelectionSort(std::vector<int>_correct);
+    void sort(std::vector<int>_correct);
 
-    std::array<int,arraysize>generated;
-    std::array<int,arraysize>correct;
+    std::vector<int>generated;
+    std::vector<int>correct;
 };
