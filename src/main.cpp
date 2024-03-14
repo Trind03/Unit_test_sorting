@@ -17,7 +17,8 @@ int main(int argc, char *argv[])
     return process.get();
 }
 
-/* Overload for << to print out forted array */
+/* Overload for << to print out forted array
+
 std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
 {
     stream << "\n";
@@ -26,13 +27,14 @@ std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
 
     return stream;
 }
+*/
 
 /* Unit test for cocktailSort */
 TEST(Unit_cocktailSort,cocktailSort)
 {
     std::shared_ptr<Cocktailsort>(cocktailsort) = std::make_shared<Cocktailsort>(Correct);
     cocktailsort->sort(TB_Sort);
-    std::cout << cocktailsort->generated;
+
     EXPECT_EQ(cocktailsort->correct,cocktailsort->generated);
 }
 
