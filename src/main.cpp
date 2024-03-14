@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <future>
-#include <memory>
 #include <gtest/gtest.h>
 #include "tests.h"
+
 #define __Overload__
 /* Overload for << to print out forted array*/
 
