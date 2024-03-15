@@ -9,7 +9,7 @@ void SelectionSort::sort(std::vector<int>arr)
 { 
 	int i, j, min_idx; 
 
-	for (i = 0; i < arr.capacity() - 1; i++) { 
+	for (i = 0; i < arr.size() - 1; i++) { 
 
 		min_idx = i; 
 		for (j = i + 1; j < arr.size(); j++) { 

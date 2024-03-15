@@ -10,7 +10,7 @@ void Cocktailsort::sort(std::vector<int> Array)
     bool swapped = true;
     int sum = 0;
     int start = 0;
-    int end = Array.capacity() - 1;
+    int end = Array.size() - 1;
 
     while (swapped)
     {
