@@ -3,7 +3,7 @@ project(sort)
 set(CXX_STANDARD 20)
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_BUILD_PARALLEL_LEVEL 4)
-
+#set(CMAKE_GENERATOR "Ninja Multi-Config")
 
 # Add sub directories and add source paths.
 add_subdirectory(googletest)
