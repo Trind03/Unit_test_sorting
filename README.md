@@ -1,6 +1,6 @@
 # Unit_test_sorting
  
-Unit tests for sorting algorithms:
+This software performs unit tests on the following algorithms.
 - Bubblesort
 - Selectionsort
 - cocktailsort
