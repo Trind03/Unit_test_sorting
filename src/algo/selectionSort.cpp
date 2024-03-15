@@ -2,13 +2,13 @@
 #include <utility>
 #include "selectionSort.h"
 
+
 SelectionSort::SelectionSort(std::vector<int>_correct) : correct(_correct)
 {};
 
 void SelectionSort::sort(std::vector<int>arr) 
 { 
 	int i, j, min_idx; 
-
 	for (i = 0; i < arr.size() - 1; i++) { 
 
 		min_idx = i; 
