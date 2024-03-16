@@ -30,7 +30,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 }
 
 
-/* Unit test for bubbleSort */
+// Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
     std::shared_ptr<BubbleSort>(bubbleSort) = std::make_shared<BubbleSort>(Correct);
@@ -39,7 +39,7 @@ TEST(Unit_bubbleSort,bubbleSort)
     EXPECT_EQ(bubbleSort->correct,bubbleSort->generated);
 }
 
-/* Unit test for selectionSort */
+// Unit test for selectionSort 
 TEST(Unit_selectionSort,selectionSort)
 {
     std::shared_ptr<SelectionSort>(selectionSort) = std::make_shared<SelectionSort>(Correct);
