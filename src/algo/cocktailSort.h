@@ -8,5 +8,5 @@ struct Cocktailsort
     void sort();
 
     std::vector<int>Generated;
-    std::set<int>Correct;
+    std::vector<int>Correct;
 };

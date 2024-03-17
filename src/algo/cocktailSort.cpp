@@ -1,6 +1,7 @@
 #include "cocktailSort.h"
 #include <vector>
 #include <random>
+#include <ctime>
 
 Cocktailsort::Cocktailsort()// : correct(_correct)
 {
@@ -11,8 +12,8 @@ Cocktailsort::Cocktailsort()// : correct(_correct)
     for(int i = 0; i < 10000; i++)
     {
         X_Seed = dist(rand);
-        Generated.push_back(dist(X_Seed)); // Use push_back to add elements to Generated
-        Correct.insert(dist(X_Seed)); // Insert elements into Correct
+        Generated.push_back(dist(X_Seed));
+        Correct.push_back(dist(X_Seed)); 
     }
 }
 
