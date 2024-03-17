@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <future>
 #include <gtest/gtest.h>
