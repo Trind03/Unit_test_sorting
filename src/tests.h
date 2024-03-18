@@ -23,8 +23,8 @@ std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
 
 TEST(Unit_cocktailSort,cocktailSort)
 {
-    std::unique_ptr<Cocktailsort>(cocktailsort) = std::make_unique<Cocktailsort>();
-    cocktailsort->sort(TB_Sort);
+    std::unique_ptr<Cocktailsort>(cocktailsort) = std::make_unique<Cocktailsort>(Sorted,TB_Sort);
+    cocktailsort->sort();
 
     EXPECT_EQ(cocktailsort->Correct,cocktailsort->Generated);
 }
