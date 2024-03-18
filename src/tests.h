@@ -4,11 +4,7 @@
 #include "cocktailSort.h"
 #include "bubbleSort.h"
 #include "selectionSort.h"
-#include <fstream>
-#include <iostream>
 #include "data.cpp"
-
-
 
 // Overload for << to print out forted array
 std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
