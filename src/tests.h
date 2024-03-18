@@ -33,7 +33,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    std::unique_ptr<BubbleSort>(bubbleSort) = std::make_unique<BubbleSort>();
+    std::unique_ptr<BubbleSort>(bubbleSort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
     bubbleSort->sort();
 
     EXPECT_EQ(bubbleSort->Correct,bubbleSort->Generated);
@@ -42,7 +42,7 @@ TEST(Unit_bubbleSort,bubbleSort)
 // Unit test for selectionSort 
 TEST(Unit_selectionSort,selectionSort)
 {
-    std::unique_ptr<SelectionSort>(selectionSort) = std::make_unique<SelectionSort>();
+    std::unique_ptr<SelectionSort>(selectionSort) = std::make_unique<SelectionSort>(Sorted,TB_Sort);
     selectionSort->sort();
 
     EXPECT_EQ(selectionSort->Correct,selectionSort->Generated);
