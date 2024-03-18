@@ -3,9 +3,9 @@
 
 struct BubbleSort
 {
-    BubbleSort(std::vector<int>(_correct));
-    void sort(std::vector<int>arr);
+    BubbleSort(std::vector<int>&correct,std::vector<int>&generated);
+    void sort();
 
-    std::vector<int>generated;
-    std::vector<int>correct;
+    std::vector<int>Generated;
+    std::vector<int>Correct;
 };

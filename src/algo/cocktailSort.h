@@ -3,7 +3,7 @@
 
 struct Cocktailsort
 {
-    Cocktailsort(std::vector<int>&Correct,std::vector<int>&generated);
+    Cocktailsort(std::vector<int>&correct,std::vector<int>&generated);
     void sort();
 
     std::vector<int>Generated;

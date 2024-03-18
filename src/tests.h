@@ -19,8 +19,8 @@ std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
 
     return stream;
 }
-// Unit test for cocktailSort 
 
+// Unit test for cocktailSort 
 TEST(Unit_cocktailSort,cocktailSort)
 {
     std::unique_ptr<Cocktailsort>(cocktailsort) = std::make_unique<Cocktailsort>(Sorted,TB_Sort);
@@ -29,14 +29,14 @@ TEST(Unit_cocktailSort,cocktailSort)
     EXPECT_EQ(cocktailsort->Correct,cocktailsort->Generated);
 }
 
-/*
+
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
     std::unique_ptr<BubbleSort>(bubbleSort) = std::make_unique<BubbleSort>();
     bubbleSort->sort();
 
-    EXPECT_EQ(bubbleSort->correct,bubbleSort->generated);
+    EXPECT_EQ(bubbleSort->Correct,bubbleSort->Generated);
 }
 
 // Unit test for selectionSort 
@@ -45,6 +45,5 @@ TEST(Unit_selectionSort,selectionSort)
     std::unique_ptr<SelectionSort>(selectionSort) = std::make_unique<SelectionSort>();
     selectionSort->sort();
 
-    EXPECT_EQ(selectionSort->correct,selectionSort->generated);
+    EXPECT_EQ(selectionSort->Correct,selectionSort->Generated);
 }
-*/
