@@ -3,11 +3,12 @@
 #include "selectionSort.h"
 
 
-SelectionSort::SelectionSort(std::vector<int>_correct) : correct(_correct)
+SelectionSort::SelectionSort(std::vector<int>&correct,std::vector<int>&generated) : Correct(correct), Generated(generated)
 {};
 
-void SelectionSort::sort(std::vector<int>arr) 
+void SelectionSort::sort() 
 { 
+	std::vector<int>&arr = Generated;
 	int i, j, min_idx; 
 	for (i = 0; i < arr.size() - 1; i++) { 
 
@@ -20,5 +21,4 @@ void SelectionSort::sort(std::vector<int>arr)
 		if (min_idx != i) 
 			std::swap(arr[min_idx], arr[i]); 
 	} 
-    generated = arr;
 } 
