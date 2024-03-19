@@ -1,15 +1,15 @@
 #include "cocktailSort.h"
-#include <vector>
+#include <array>
 #include <random>
 #include <ctime>
 
-Cocktailsort::Cocktailsort(std::vector<int>&_correct,std::vector<int>&_generated) : Correct(_correct), Generated(_generated)
+Cocktailsort::Cocktailsort(std::array<int,10000>&_correct,std::array<int,10000>&_generated) : Correct(_correct), Generated(_generated)
 {}
 
 
 void Cocktailsort::sort()
 {
-    std::vector<int>&arr = Generated;
+    std::array<int,10000>&arr = Generated;
     bool swapped = true;
     int sum = 0;
     int start = 0;

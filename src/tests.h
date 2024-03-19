@@ -7,7 +7,7 @@
 #include "data.cpp"
 
 // Overload for << to print out forted array
-std::ostream& operator<<(std::ostream &stream, std::vector<int>& array)
+std::ostream& operator<<(std::ostream &stream, std::array<int,10000>& array)
 {
     stream << "\n";
     for(int arr : array) stream << arr << " - ";
