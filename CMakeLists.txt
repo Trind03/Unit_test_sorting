@@ -7,9 +7,11 @@ set(CMAKE_BUILD_PARALLEL_LEVEL 4)
 
 # Add sub directories and add source paths.
 add_subdirectory(googletest)
-include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
-include_directories(${cmake_SOURCE_DIR}/src)
-include_directories(${CMAKE_SOURCE_DIR}/src/algo)
+include_directories(
+    ${cmake_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/src/algo
+    ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
+)
 
 add_executable(sort
 src/main.cpp
