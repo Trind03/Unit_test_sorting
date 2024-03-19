@@ -1,11 +1,11 @@
 #pragma once
-#include <vector>
+#include <array>
 
 struct Cocktailsort
 {
-    Cocktailsort(std::vector<int>&correct,std::vector<int>&generated);
+    Cocktailsort(std::array<int,10000>&correct,std::array<int,10000>&generated);
     void sort();
 
-    std::vector<int>Generated;
-    std::vector<int>Correct;
+    std::array<int,10000>Generated;
+    std::array<int,10000>Correct;
 };

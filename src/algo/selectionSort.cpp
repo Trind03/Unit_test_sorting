@@ -1,16 +1,19 @@
-#include <vector>
+#include <array>
 #include <utility>
 #include "selectionSort.h"
 
 
-SelectionSort::SelectionSort(std::vector<int>&correct,std::vector<int>&generated) : Correct(correct), Generated(generated)
-{};
+SelectionSort::SelectionSort(std::array<int,10000>&correct,std::array<int,10000>&generated) : Correct(correct), Generated(generated)
+{
+	
+};
 
 void SelectionSort::sort() 
 { 
-	std::vector<int>&arr = Generated;
+	std::array<int,10000>&arr = Generated;
 	int i, j, min_idx; 
-	for (i = 0; i < arr.size() - 1; i++) { 
+	for (i = 0; i < arr.size() - 1; i++)
+	{ 
 
 		min_idx = i; 
 		for (j = i + 1; j < arr.size(); j++) { 
