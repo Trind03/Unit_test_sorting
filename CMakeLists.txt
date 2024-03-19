@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.28)
 project(sort)
-set(CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_BUILD_PARALLEL_LEVEL 4)
 #set(CMAKE_GENERATOR "Ninja Multi-Config")
