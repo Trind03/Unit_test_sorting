@@ -2,8 +2,9 @@
 #include <array>
 #include <random>
 #include <ctime>
+#define arraySize 10000
 
-Cocktailsort::Cocktailsort(std::array<int,10000>&_correct,std::array<int,10000>&_generated) : Correct(_correct), Generated(_generated)
+Cocktailsort::Cocktailsort(std::array<int,arraySize>&_correct,std::array<int,arraySize>&_generated) : Correct(_correct), Generated(_generated)
 {}
 
 

@@ -1,16 +1,17 @@
 #include <array>
 #include <utility>
 #include "selectionSort.h"
+#define arraySize 10000
 
 
-SelectionSort::SelectionSort(std::array<int,10000>&correct,std::array<int,10000>&generated) : Correct(correct), Generated(generated)
+SelectionSort::SelectionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Correct(correct), Generated(generated)
 {
 	
 };
 
 void SelectionSort::sort() 
 { 
-	std::array<int,10000>&arr = Generated;
+	std::array<int,arraySize>&arr = Generated;
 	int i, j, min_idx; 
 	for (i = 0; i < arr.size() - 1; i++)
 	{ 

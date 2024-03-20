@@ -4,7 +4,11 @@
 #include "cocktailSort.h"
 #include "bubbleSort.h"
 #include "selectionSort.h"
-#include "data.cpp"
+#include "testSet.h"
+#define arraySize 10000
+
+
+
 
 // Overload for << to print out forted array
 std::ostream& operator<<(std::ostream &stream, std::array<int,10000>& array)
