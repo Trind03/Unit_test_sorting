@@ -5,15 +5,24 @@ This software performs unit tests on the following algorithms.
 - Selectionsort
 - cocktailsort
 
-# Dependencies
-- CMake
-- Googletest
-- Any cpp compiler
+## Dependencies
+- **CMake**
+- **Googletest**
+- **G++ / MSVC 2022**
 
-# Download codebase
+## Download codebase
 
 ``` bash
 git clone https://github.com/Trind03/Unit_test_sorting.git
 ```
 
-# Build stage
+## Build stage
+
+``` bash
+cmake -B <build-tree dir> -S <source-tree dir>
+```
+
+Build type is optional, defualt build-type is Debug.
+``` bash
+cmake --build <build-tree dir> --config <build-type>
+```
