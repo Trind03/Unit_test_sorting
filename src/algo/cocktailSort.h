@@ -1,11 +1,11 @@
 #pragma once
 #include <array>
-
+#define arraySize 10000
 struct Cocktailsort
 {
-    Cocktailsort(std::array<int,10000>&correct,std::array<int,10000>&generated);
+    Cocktailsort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
     void sort();
 
-    std::array<int,10000>Generated;
-    std::array<int,10000>Correct;
+    std::array<int,arraySize>Generated;
+    std::array<int,arraySize>Correct;
 };
