@@ -1,6 +1,6 @@
-#include <future>
 #include <gtest/gtest.h>
-
+#include <future>
+#include "tests.h"
 
 int main(int argc, char *argv[])
 {
