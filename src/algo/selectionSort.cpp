@@ -9,9 +9,8 @@ SelectionSort::SelectionSort(std::array<int,arraySize>&correct,std::array<int,ar
 	
 };
 
-void SelectionSort::sort() 
+void SelectionSort::sort(std::array<int,arraySize>&arr) 
 { 
-	std::array<int,arraySize>&arr = Generated;
 	int i, j, min_idx; 
 	for (i = 0; i < arr.size() - 1; i++)
 	{ 

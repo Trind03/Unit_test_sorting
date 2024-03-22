@@ -6,9 +6,8 @@ BubbleSort::BubbleSort(std::array<int,arraySize>&correct,std::array<int,arraySiz
 {}
 
 
-void BubbleSort::sort()
+void BubbleSort::sort(std::array<int,arraySize>&arr)
 {
-    std::array<int,arraySize>&arr = Generated;
     int i, ii;
     for (i = 0; i < arr.size() - 1; i++)
 

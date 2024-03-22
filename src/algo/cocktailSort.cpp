@@ -4,13 +4,12 @@
 #include <ctime>
 #define arraySize 10000
 
-Cocktailsort::Cocktailsort(std::array<int,arraySize>&_correct,std::array<int,arraySize>&_generated) : Correct(_correct), Generated(_generated)
+CocktailSort::CocktailSort(std::array<int,arraySize>&_correct,std::array<int,arraySize>&_generated) : Correct(_correct), Generated(_generated)
 {}
 
 
-void Cocktailsort::sort()
+void CocktailSort::sort(std::array<int,arraySize>&arr)
 {
-    std::array<int,10000>&arr = Generated;
     bool swapped = true;
     int sum = 0;
     int start = 0;

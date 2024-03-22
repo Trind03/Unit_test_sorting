@@ -24,6 +24,7 @@ ${SOURCE_DIR}/main.cpp
 ${Algo}/cocktailSort.cpp
 ${Algo}/bubblesort.cpp
 ${Algo}/selectionSort.cpp
+${Algo}/insertionSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)
