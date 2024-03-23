@@ -10,8 +10,6 @@
 #define arraySize 10000
 
 
-
-
 // Overload for << to print out forted array
 std::ostream& operator<<(std::ostream &stream, std::array<int,10000>& array)
 {
@@ -21,6 +19,7 @@ std::ostream& operator<<(std::ostream &stream, std::array<int,10000>& array)
 
     return stream;
 }
+
 
 // Unit test for cocktailSort 
 TEST(Unit_cocktailSort,cocktailSort)
@@ -40,7 +39,6 @@ TEST(Unit_bubbleSort,bubbleSort)
     Bubblesort->sort(Bubblesort->Generated);
 
     EXPECT_EQ(Bubblesort->Correct,Bubblesort->Generated);
-    
 }
 
 // Unit test for selectionSort 
@@ -51,7 +49,6 @@ TEST(Unit_selectionSort,selectionSort)
     Selectionsort->sort(Selectionsort->Generated);
 
     EXPECT_EQ(Selectionsort->Correct,Selectionsort->Generated);
-    
 }
 TEST(Unit_insertionsort,insertionsort)
 {
@@ -59,7 +56,5 @@ TEST(Unit_insertionsort,insertionsort)
     std::unique_ptr<InsertionSort>(insertionsort) = std::make_unique<InsertionSort>(Sorted,TB_Sort);
     insertionsort->sort(insertionsort->Generated);
 
-    EXPECT_EQ(insertionsort->Correct,insertionsort->Generated);
-
-    
+    EXPECT_EQ(insertionsort->Correct,insertionsort->Generated);    
 }
