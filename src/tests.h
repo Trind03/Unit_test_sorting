@@ -1,13 +1,12 @@
 #pragma once
 #include <gtest/gtest.h>
 #include <memory>
-#include "cocktailSort.h"
-#include "cocktailSort.h"
-#include "bubbleSort.h"
-#include "selectionSort.h"
-#include "insertionSort.h"
-#include "testSet.h"
-#include "mergeSort.h"
+#include <cocktailSort.h>
+#include <bubbleSort.h>
+#include <selectionSort.h>
+#include <insertionSort.h>
+#include <testSet.h>
+#include <mergeSort.h>
 #define arraySize 10000
 
 
