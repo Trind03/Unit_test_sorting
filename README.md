@@ -3,8 +3,9 @@
 This software performs unit tests on the following algorithms.
 - Bubblesort
 - Selectionsort
-- cocktailsort
-- insertionSort
+- Cocktailsort
+- InsertionSort
+- Mergesort
 ## Dependencies
 - **CMake**
 - **Googletest**
