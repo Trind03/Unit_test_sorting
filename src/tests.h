@@ -50,6 +50,8 @@ TEST(Unit_selectionSort,selectionSort)
 
     EXPECT_EQ(Selectionsort->Correct,Selectionsort->Generated);
 }
+
+// Unit test for insertionsort 
 TEST(Unit_insertionsort,insertionsort)
 {
     
@@ -59,6 +61,7 @@ TEST(Unit_insertionsort,insertionsort)
     EXPECT_EQ(insertionsort->Correct,insertionsort->Generated);    
 }
 
+// Unit test for mergesort 
 TEST(Unit_mergeSort,mergesort)
 {
     
