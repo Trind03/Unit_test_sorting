@@ -42,14 +42,17 @@ void MergeSort::merge(std::array<int,arraySize>&array, int const left, int const
     int indexOfMergedArray = left;
  
     while (indexOfSubArrayOne < subArrayOne
-           && indexOfSubArrayTwo < subArrayTwo) {
+           && indexOfSubArrayTwo < subArrayTwo)
+           {
         if (leftArray[indexOfSubArrayOne]
-            <= rightArray[indexOfSubArrayTwo]) {
+            <= rightArray[indexOfSubArrayTwo])
+            {
             array[indexOfMergedArray]
                 = leftArray[indexOfSubArrayOne];
             indexOfSubArrayOne++;
         }
-        else {
+        else
+        {
             array[indexOfMergedArray]
                 = rightArray[indexOfSubArrayTwo];
             indexOfSubArrayTwo++;
@@ -57,7 +60,8 @@ void MergeSort::merge(std::array<int,arraySize>&array, int const left, int const
         indexOfMergedArray++;
     }
 
-    while (indexOfSubArrayOne < subArrayOne) {
+    while (indexOfSubArrayOne < subArrayOne)
+    {
         array[indexOfMergedArray]
             = leftArray[indexOfSubArrayOne];
         indexOfSubArrayOne++;
@@ -65,7 +69,8 @@ void MergeSort::merge(std::array<int,arraySize>&array, int const left, int const
     }
  
 
-    while (indexOfSubArrayTwo < subArrayTwo) {
+    while (indexOfSubArrayTwo < subArrayTwo)
+    {
         array[indexOfMergedArray]
             = rightArray[indexOfSubArrayTwo];
         indexOfSubArrayTwo++;

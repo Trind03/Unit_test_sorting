@@ -64,7 +64,7 @@ TEST(Unit_mergeSort,mergesort)
 {
     
     std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(Sorted,TB_Sort);
-    mergeSort->sort(mergeSort->Generated,0,1 - mergeSort->Generated.size());
+    mergeSort->sort(mergeSort->Generated,0,9999);
 
     EXPECT_EQ(mergeSort->Correct,mergeSort->Generated);    
 }
