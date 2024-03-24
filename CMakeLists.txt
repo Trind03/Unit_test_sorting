@@ -8,7 +8,6 @@ set(CMAKE_BUILD_PARALLEL_LEVEL 4)
 # Variables for file paths
 set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/src")
 set(Algo "${SOURCE_DIR}/algo")
-set(CMAKE_CXX_STANDARD 20)
 
 
 # Add sub directories and add source paths.
@@ -25,6 +24,7 @@ ${Algo}/cocktailSort.cpp
 ${Algo}/bubblesort.cpp
 ${Algo}/selectionSort.cpp
 ${Algo}/insertionSort.cpp
+${Algo}/mergeSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)

@@ -7,6 +7,7 @@
 #include "selectionSort.h"
 #include "insertionSort.h"
 #include "testSet.h"
+#include "mergeSort.h"
 #define arraySize 10000
 
 
@@ -57,4 +58,13 @@ TEST(Unit_insertionsort,insertionsort)
     insertionsort->sort(insertionsort->Generated);
 
     EXPECT_EQ(insertionsort->Correct,insertionsort->Generated);    
+}
+
+TEST(Unit_mergeSort,mergesort)
+{
+    
+    std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(Sorted,TB_Sort);
+    mergeSort->sort(mergeSort->Generated,0,9999);
+
+    EXPECT_EQ(mergeSort->Correct,mergeSort->Generated);    
 }
