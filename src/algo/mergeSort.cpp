@@ -1,16 +1,23 @@
 #pragma once
 #include <array>
 #include "mergeSort.h"
+#include <memory>
 
 
-void MergeSort::mergeSort(std::array<int,arraySize>&array, int const begin, int const end)
+MergeSort::MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Generated(generated), Correct(correct)
+{}
+
+
+
+
+void MergeSort::sort(std::array<int,arraySize>&array, int const begin, int const end)
 {
     if (begin >= end)
         return;
  
     int mid = begin + (end - begin) / 2;
-    mergeSort(array, begin, mid);
-    mergeSort(array, mid + 1, end);
+    sort(array, begin, mid);
+    sort(array, mid + 1, end);
     merge(array, begin, mid, end);
 }
 
@@ -19,7 +26,10 @@ void MergeSort::merge(std::array<int,arraySize>&array, int const left, int const
 {
     int const subArrayOne = mid - left + 1;
     int const subArrayTwo = right - mid;
- 
+
+    //std::unique_ptr<std::array<int,10>>(leftArray) = std::make_unique<std::array<int,10>>(subArrayOne);
+    //std::unique_ptr<std::array<int,10>>(rightArray) = std::make_unique<std::array<int,10>>(subArrayTwo);
+
     auto *leftArray = new int[subArrayOne],
          *rightArray = new int[subArrayTwo];
  
