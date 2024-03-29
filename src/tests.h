@@ -23,7 +23,6 @@ TEST(Unit_cocktailSort,cocktailSort)
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    
     std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
     Bubblesort->sort(Bubblesort->Generated);
 
@@ -33,7 +32,6 @@ TEST(Unit_bubbleSort,bubbleSort)
 // Unit test for selectionSort 
 TEST(Unit_selectionSort,selectionSort)
 {
-    
     std::unique_ptr<SelectionSort>(Selectionsort) = std::make_unique<SelectionSort>(Sorted,TB_Sort);
     Selectionsort->sort(Selectionsort->Generated);
 
@@ -43,7 +41,6 @@ TEST(Unit_selectionSort,selectionSort)
 // Unit test for insertionsort 
 TEST(Unit_insertionsort,insertionsort)
 {
-    
     std::unique_ptr<InsertionSort>(insertionsort) = std::make_unique<InsertionSort>(Sorted,TB_Sort);
     insertionsort->sort(insertionsort->Generated);
 
@@ -53,7 +50,6 @@ TEST(Unit_insertionsort,insertionsort)
 // Unit test for mergesort 
 TEST(Unit_mergeSort,mergesort)
 {
-    
     std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(Sorted,TB_Sort);
     mergeSort->sort(mergeSort->Generated,0,9999);
 
