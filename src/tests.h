@@ -10,17 +10,6 @@
 #define arraySize 10000
 
 
-// Overload for << to print out forted array
-std::ostream& operator<<(std::ostream &stream, std::array<int,10000>& array)
-{
-    stream << "\n";
-    for(int arr : array) stream << arr << " - ";
-    stream << "\n";
-
-    return stream;
-}
-
-
 // Unit test for cocktailSort 
 TEST(Unit_cocktailSort,cocktailSort)
 {
