@@ -3,7 +3,7 @@
 #include "algorithm.h"
 #define arraySize 10000
 
-class MergeSort : public algorithm
+class MergeSort
 {
 public:
     MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
