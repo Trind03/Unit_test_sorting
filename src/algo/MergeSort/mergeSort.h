@@ -1,8 +1,11 @@
 #pragma once 
 #include <array>
+#include "algorithm.h"
 #define arraySize 10000
-struct MergeSort// : private algorithm
+
+class MergeSort : public algorithm
 {
+public:
     MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
 
     void merge(std::array<int,arraySize>&array, int const left, int const mid,int const right);
