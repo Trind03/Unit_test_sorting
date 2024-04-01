@@ -4,9 +4,8 @@
 #define arraySize 10000
 
 
-class BubbleSort : public algorithm
+struct BubbleSort : public algorithm
 {
-public:
     BubbleSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
     void sort(std::array<int,arraySize>&arr) override;
 
