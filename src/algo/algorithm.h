@@ -2,9 +2,8 @@
 #include <array>
 #define arraySize 10000
 
-class algorithm
+struct algorithm
 {
-public:
     void virtual sort(std::array<int,arraySize>&arr) = 0;
     
     std::array<int,arraySize>Generated;
