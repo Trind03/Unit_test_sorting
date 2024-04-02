@@ -7,7 +7,7 @@
 #include <insertionSort.h>
 #include <testSet.h>
 #include <mergeSort.h>
-#define arraySize 10000
+#include "countingSort.h"
 
 
 // Unit test for cocktailSort 
@@ -54,4 +54,14 @@ TEST(Unit_mergeSort,mergesort)
     mergeSort->sort(mergeSort->Generated,0,9999);
 
     EXPECT_EQ(mergeSort->Correct,mergeSort->Generated);    
+}
+
+
+// Unit test for countingsort 
+TEST(Unit_countingSort,countingsort)
+{
+    std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
+    countingSort->sort(countingSort->Generated);
+
+    EXPECT_EQ(countingSort->Correct,countingSort->Generated);    
 }

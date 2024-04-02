@@ -15,6 +15,7 @@ set(bubblesort "${Algo}/BubbleSort")
 set(selectionSort "${Algo}/SelectionSort")
 set(insertionSort "${Algo}/InsertionSort")
 set(mergeSort "${Algo}/MergeSort")
+set(countingSort "${Algo}/CountingSort")
 
 
 # Add sub directories and add source paths.
@@ -27,6 +28,7 @@ include_directories(
     ${selectionSort}
     ${insertionSort}
     ${mergeSort}
+    ${countingSort}
     ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
 )
 
@@ -37,6 +39,7 @@ ${bubblesort}/bubblesort.cpp
 ${selectionSort}/selectionSort.cpp
 ${insertionSort}/insertionSort.cpp
 ${mergeSort}/mergeSort.cpp
+${countingSort}/countingSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)

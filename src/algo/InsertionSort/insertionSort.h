@@ -4,8 +4,9 @@
 #define arraySize 10000
 
 
-struct InsertionSort : public algorithm
+class InsertionSort : public algorithm
 {
+public:
     InsertionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
     void sort(std::array<int,arraySize>&arr) override;
 

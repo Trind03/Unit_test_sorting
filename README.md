@@ -6,6 +6,8 @@ This software performs unit tests on the following algorithms.
 - Cocktailsort
 - InsertionSort
 - Mergesort
+- Countingsort
+
 ## Dependencies
 - **CMake**
 - **Googletest**
