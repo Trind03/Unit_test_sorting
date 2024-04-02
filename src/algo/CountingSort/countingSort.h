@@ -1,12 +1,17 @@
 #pragma once
 #include <array>
+#include "algorithm.h"
+
 #define arraySize 10000
 
-class countingSort
+class CountingSort : public algorithm
 {
 public:
-    countingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
+    CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
     void sort(std::array<int,arraySize>&arr) override;
+
+    std::array<int,arraySize>Generated;
+    std::array<int,arraySize>Correct;
 };
 /*
 
