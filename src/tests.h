@@ -1,13 +1,13 @@
 #pragma once
 #include <gtest/gtest.h>
 #include <memory>
-#include <cocktailSort.h>
-#include <bubbleSort.h>
-#include <selectionSort.h>
-#include <insertionSort.h>
+#include "./cocktailSort/cocktailSort.h"
+#include "./bubbleSort/bubbleSort.h"
+#include "./selectionSort/selectionSort.h"
+#include "./insertionSort/insertionSort.h"
 #include <testSet.h>
-#include <mergeSort.h>
-#include "countingSort.h"
+#include "./mergeSort/mergeSort.h"
+#include "./countingSort/countingSort.h"
 
 
 // Unit test for cocktailSort 
