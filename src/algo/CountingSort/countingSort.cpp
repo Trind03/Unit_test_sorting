@@ -30,7 +30,6 @@ void CountingSort::sort(std::array<int, arraySize>& arr)
         count[i] += count[i - 1];
     }
 
-
     std::array<int, arraySize> output;
 
     for (int i = arr.size() - 1; i >= 0; --i)
