@@ -15,12 +15,12 @@ add_subdirectory(googletest)
 include_directories(
     ${SOURCE_DIR}
     ${Algo}
-    ${cocktailSort}
-    ${bubblesort}
-    ${selectionSort}
-    ${insertionSort}
-    ${mergeSort}
-    ${countingSort}
+    ${Algo}/CocktailSort
+    ${Algo}/BubbleSort
+    ${Algo}/SelectionSort
+    ${Algo}/InsertionSort
+    ${Algo}/MergeSort
+    ${Algo}/CountingSort
     ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
 )
 
