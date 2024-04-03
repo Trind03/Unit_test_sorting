@@ -5,9 +5,9 @@
 #include "./bubbleSort/bubbleSort.h"
 #include "./selectionSort/selectionSort.h"
 #include "./insertionSort/insertionSort.h"
-#include <testSet.h>
 #include "./mergeSort/mergeSort.h"
 #include "./countingSort/countingSort.h"
+#include "testSet.h"
 
 
 // Unit test for cocktailSort 
@@ -18,7 +18,6 @@ TEST(Unit_cocktailSort,cocktailSort)
 
     EXPECT_EQ(Cocktailsort->Correct,Cocktailsort->Generated);
 }
-
 
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
