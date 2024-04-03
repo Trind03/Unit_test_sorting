@@ -60,8 +60,10 @@ TEST(Unit_mergeSort,mergesort)
 // Unit test for countingsort 
 TEST(Unit_countingSort,countingsort)
 {
-    std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
+    std::unique_ptr<algorithm>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
+    //algorithm* countingSort = new CountingSort(Sorted,TB_Sort);
     countingSort->sort(countingSort->Generated);
 
     EXPECT_EQ(countingSort->Correct,countingSort->Generated);    
+    //delete countingSort;
 }

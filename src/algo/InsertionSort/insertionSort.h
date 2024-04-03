@@ -8,7 +8,7 @@ class InsertionSort : public algorithm
 {
 public:
     InsertionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
-    void sort(std::array<int,arraySize>&arr) override;
+    void sort(std::array<int,arraySize>&arr)override;
 
     std::array<int,arraySize>Generated;
     std::array<int,arraySize>Correct;

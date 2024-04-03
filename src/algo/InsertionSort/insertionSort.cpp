@@ -2,11 +2,11 @@
 #include "insertionSort.h"
 #define arraySize 10000
 
-InsertionSort::InsertionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Correct(correct), Generated(generated)
+InsertionSort::InsertionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct),Generated(generated)
 {}
 
 
-void InsertionSort::sort(std::array<int,arraySize>&arr)
+void InsertionSort::sort(std::array<int,arraySize>&arr) 
 {
     int key, j;
     for (int i = 1; i < arr.size(); i++)
