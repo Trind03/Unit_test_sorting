@@ -1,8 +1,8 @@
 #pragma once
 #include <gtest/gtest.h>
 #include <memory>
-#include "./cocktailSort/cocktailSort.h"
 #include "./bubbleSort/bubbleSort.h"
+#include "./cocktailSort/cocktailSort.h"
 #include "./selectionSort/selectionSort.h"
 #include "./insertionSort/insertionSort.h"
 #include "./mergeSort/mergeSort.h"
@@ -19,14 +19,6 @@ TEST(Unit_cocktailSort,cocktailSort)
     EXPECT_EQ(Cocktailsort->Correct,Cocktailsort->Generated);
 }
 
-// Unit test for bubbleSort 
-TEST(Unit_bubbleSort,bubbleSort)
-{
-    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
-    Bubblesort->sort(Bubblesort->Generated);
-
-    EXPECT_EQ(Bubblesort->Correct,Bubblesort->Generated);
-}
 
 // Unit test for selectionSort 
 TEST(Unit_selectionSort,selectionSort)
@@ -63,4 +55,13 @@ TEST(Unit_countingSort,countingsort)
     countingSort->sort(countingSort->Generated);
 
     EXPECT_EQ(countingSort->Correct,countingSort->Generated);    
+}
+
+// Unit test for bubbleSort 
+TEST(Unit_bubbleSort,bubbleSort)
+{
+    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
+    Bubblesort->sort(Bubblesort->Generated);
+
+    EXPECT_TRUE(Bubblesort->validator());
 }

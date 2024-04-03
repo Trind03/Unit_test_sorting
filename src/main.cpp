@@ -2,7 +2,7 @@
 #include <future>
 #include "tests.h"
 
-int main(int argc, char *argv[])
+int main(int argc,char *argv[])
 {
     testing::InitGoogleTest(&argc,argv);
     std::future<int>process = std::async(std::launch::async,RUN_ALL_TESTS);
