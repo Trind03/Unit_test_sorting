@@ -6,7 +6,7 @@ class algorithm
 {
 public:
     void virtual sort(std::array<int,arraySize>&arr) = 0;
-    bool virtual validator()
+    bool validator()
     {
         for (int i = 1; i < Generated.size(); i++)
             if (Generated[i] < Generated[i - 1]) 

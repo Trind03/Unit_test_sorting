@@ -2,8 +2,10 @@
 #include "bubbleSort.h"
 #define arraySize 10000
 
-BubbleSort::BubbleSort(std::array<int,arraySize>&generated) : Generated(generated)
-{}
+BubbleSort::BubbleSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Correct(correct), Generated(generated)
+{
+    sort(Generated);
+}
 
 
 void BubbleSort::sort(std::array<int,arraySize>&arr)
