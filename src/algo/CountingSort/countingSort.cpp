@@ -1,5 +1,4 @@
 #include <array>
-//#include <algorithm>
 #include "countingSort.h"
 #define arraySize 10000
 
