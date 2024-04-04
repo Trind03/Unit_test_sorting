@@ -24,14 +24,10 @@ void CountingSort::sort(std::array<int, arraySize>& arr)
     std::array<int, arraySize * 10> count = {0};
     
     for (int num : arr)
-    {
         count[num]++;
-    }
 
     for (int i = 1; i <= maxElement; ++i)
-    {
         count[i] += count[i - 1];
-    }
 
     std::array<int, arraySize> output;
 
