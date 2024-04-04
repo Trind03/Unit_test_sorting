@@ -53,7 +53,7 @@ TEST(Unit_mergeSort,mergesort)
 TEST(Unit_countingSort,countingsort)
 {
     std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
-    //countingSort->sort(countingSort->Generated);
+    countingSort->sort(countingSort->Generated);
 
     EXPECT_EQ(countingSort->Generated,countingSort->Correct);
 }
@@ -62,7 +62,7 @@ TEST(Unit_countingSort,countingsort)
 TEST(Unit_bubbleSort,bubbleSort)
 {
     std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
-    //Bubblesort->sort(Bubblesort->Generated);
+    Bubblesort->sort(Bubblesort->Generated);
 
     EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
 }

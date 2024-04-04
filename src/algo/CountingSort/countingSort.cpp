@@ -4,9 +4,7 @@
 #define arraySize 10000
 
 CountingSort::CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct), Generated(generated)
-{
-    sort(Generated);
-}
+{}
 
 
 void CountingSort::sort(std::array<int, arraySize>& arr)
@@ -16,9 +14,7 @@ void CountingSort::sort(std::array<int, arraySize>& arr)
     for (int i = 1; i < arr.size(); ++i)
     {
         if (arr[i] > maxElement)
-        {
             maxElement = arr[i];
-        }
     }
 
     std::array<int, arraySize * 10> count = {0};
