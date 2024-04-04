@@ -6,14 +6,16 @@ class algorithm
 {
 public:
     void virtual sort(std::array<int,arraySize>&arr) = 0;
-    bool validator()
-    {
-        for (int i = 1; i < Generated.size(); i++)
-            if (Generated[i] < Generated[i - 1]) 
-                return false;
-        return true;
-    }
+    bool virtual validator();
+
     std::array<int,arraySize>Generated;
     std::array<int,arraySize>Correct;
-
 };
+
+bool algorithm::validator()
+{
+    for (int i = 1; i < Generated.size(); i++)
+        if (Generated[i] < Generated[i - 1]) 
+            return false;
+    return true;
+}
