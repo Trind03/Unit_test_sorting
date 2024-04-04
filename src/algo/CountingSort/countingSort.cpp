@@ -1,15 +1,18 @@
 #include <array>
-#include <algorithm>
+//#include <algorithm>
 #include "countingSort.h"
 #define arraySize 10000
 
-CountingSort::CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct),Generated(generated)
-{}
+CountingSort::CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct), Generated(generated)
+{
+    sort(Generated);
+}
 
 
 void CountingSort::sort(std::array<int, arraySize>& arr)
 {
     int maxElement = arr[0];
+    
     for (int i = 1; i < arr.size(); ++i)
     {
         if (arr[i] > maxElement)
@@ -18,7 +21,7 @@ void CountingSort::sort(std::array<int, arraySize>& arr)
         }
     }
 
-    std::array<int, 100000> count = {};
+    std::array<int, arraySize * 10> count = {0};
     
     for (int num : arr)
     {
@@ -37,6 +40,7 @@ void CountingSort::sort(std::array<int, arraySize>& arr)
         output[count[arr[i]] - 1] = arr[i];
         count[arr[i]]--;
     }
+
 
     Generated = output;
 }
