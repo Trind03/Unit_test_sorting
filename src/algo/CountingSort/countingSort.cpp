@@ -6,8 +6,9 @@ CountingSort::CountingSort(std::array<int,arraySize>&correct,std::array<int,arra
 {}
 
 
-void CountingSort::sort(std::array<int, arraySize>& arr)
+void CountingSort::sort()
 {
+    std::array<int, arraySize>& arr = Generated;
     int maxElement = arr[0];
     
     for (int i = 1; i < arr.size(); ++i)

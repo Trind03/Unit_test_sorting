@@ -2,12 +2,13 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "./bubbleSort/bubbleSort.h"
+#include "testSet.h"
+
 #include "./cocktailSort/cocktailSort.h"
 #include "./selectionSort/selectionSort.h"
 #include "./insertionSort/insertionSort.h"
 #include "./mergeSort/mergeSort.h"
 #include "./countingSort/countingSort.h"
-#include "testSet.h"
 
 
 
@@ -15,7 +16,7 @@
 TEST(Unit_cocktailSort,cocktailSort)
 {
     std::unique_ptr<algorithm>(Cocktailsort) = std::make_unique<CocktailSort>(Sorted,TB_Sort);
-    Cocktailsort->sort(Cocktailsort->Generated);
+    Cocktailsort->sort();
 
     EXPECT_EQ(Cocktailsort->Correct,Cocktailsort->Generated);
 }
@@ -25,7 +26,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 TEST(Unit_selectionSort,selectionSort)
 {
     std::unique_ptr<algorithm>(Selectionsort) = std::make_unique<SelectionSort>(Sorted,TB_Sort);
-    Selectionsort->sort(Selectionsort->Generated);
+    Selectionsort->sort();
 
     EXPECT_EQ(Selectionsort->Correct,Selectionsort->Generated);
 }
@@ -34,7 +35,7 @@ TEST(Unit_selectionSort,selectionSort)
 TEST(Unit_insertionsort,insertionsort)
 {
     std::unique_ptr<algorithm>(insertionsort) = std::make_unique<InsertionSort>(Sorted,TB_Sort);
-    insertionsort->sort(insertionsort->Generated);
+    insertionsort->sort();
 
     EXPECT_EQ(insertionsort->Correct,insertionsort->Generated);    
 }
@@ -43,7 +44,7 @@ TEST(Unit_insertionsort,insertionsort)
 TEST(Unit_mergeSort,mergesort)
 {
     std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(Sorted,TB_Sort);
-    mergeSort->sort(mergeSort->Generated,0,9999);
+    mergeSort->sort(0,9999);
 
     EXPECT_EQ(mergeSort->Correct,mergeSort->Generated);    
 }
@@ -53,8 +54,8 @@ TEST(Unit_mergeSort,mergesort)
  
 TEST(Unit_countingSort,countingsort)
 {
-    std::unique_ptr<algorithm>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
-    countingSort->sort(countingSort->Generated);
+    std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
+    countingSort->sort();
 
     EXPECT_EQ(countingSort->Generated,countingSort->Correct);
 }
@@ -62,8 +63,9 @@ TEST(Unit_countingSort,countingsort)
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    std::unique_ptr<algorithm>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
-    Bubblesort->sort(Bubblesort->Generated);
+    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
+    Bubblesort->sort();
 
-    EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
+    //EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
+    EXPECT_TRUE(Bubblesort->validator());
 }

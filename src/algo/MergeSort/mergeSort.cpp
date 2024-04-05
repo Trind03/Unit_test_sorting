@@ -1,4 +1,3 @@
-#pragma once
 #include <array>
 #include "mergeSort.h"
 #include <memory>
@@ -10,20 +9,22 @@ MergeSort::MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>
 
 
 
-void MergeSort::sort(std::array<int,arraySize>&array, int const begin, int const end)
+void MergeSort::sort(int const begin, int const end)
 {
+    std::array<int, arraySize>& array = Generated;
     if (begin >= end)
         return;
  
     int mid = begin + (end - begin) / 2;
-    sort(array, begin, mid);
-    sort(array, mid + 1, end);
-    merge(array, begin, mid, end);
+    sort(begin, mid);
+    sort(mid + 1, end);
+    merge(begin, mid, end);
 }
 
 
-void MergeSort::merge(std::array<int,arraySize>&array, int const left, int const mid,int const right)
+void MergeSort::merge(int const left, int const mid,int const right)
 {
+    std::array<int, arraySize>& array = Generated;
     int const subArrayOne = mid - left + 1;
     int const subArrayTwo = right - mid;
 

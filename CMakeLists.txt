@@ -1,28 +1,9 @@
 cmake_minimum_required(VERSION 3.28)
 project(sort)
-
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_BUILD_PARALLEL_LEVEL 4)
-
-
-# Primary directories 
-set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/src")
-set(Algo "${SOURCE_DIR}/algo")
-
+include(${CMAKE_SOURCE_DIR}/init.cmake)
 
 # Add sub directories and add source paths.
 add_subdirectory(googletest)
-include_directories(
-    ${SOURCE_DIR}
-    ${Algo}
-    ${Algo}/CocktailSort
-    ${Algo}/BubbleSort
-    ${Algo}/SelectionSort
-    ${Algo}/InsertionSort
-    ${Algo}/MergeSort
-    ${Algo}/CountingSort
-    ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
-)
 
 add_executable(sort
 ${SOURCE_DIR}/main.cpp
