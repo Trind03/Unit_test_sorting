@@ -2,12 +2,13 @@
 #include <gtest/gtest.h>
 #include <memory>
 #include "./bubbleSort/bubbleSort.h"
+#include "testSet.h"
+
 #include "./cocktailSort/cocktailSort.h"
 #include "./selectionSort/selectionSort.h"
 #include "./insertionSort/insertionSort.h"
 #include "./mergeSort/mergeSort.h"
 #include "./countingSort/countingSort.h"
-#include "testSet.h"
 
 
 
@@ -62,7 +63,7 @@ TEST(Unit_countingSort,countingsort)
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    std::unique_ptr<algorithm>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
+    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
     Bubblesort->sort(Bubblesort->Generated);
 
     EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);

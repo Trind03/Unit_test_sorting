@@ -5,7 +5,13 @@
 BubbleSort::BubbleSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Correct(correct), Generated(generated)
 {}
 
-
+bool BubbleSort::validator()
+{
+    for (int i = 1; i < Generated.size(); i++)
+        if (Generated[i] < Generated[i - 1]) 
+            return false;
+    return true;
+}
 void BubbleSort::sort(std::array<int,arraySize>&arr)
 {
     int i, ii;

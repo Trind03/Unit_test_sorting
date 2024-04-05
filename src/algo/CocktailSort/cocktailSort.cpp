@@ -7,6 +7,13 @@
 CocktailSort::CocktailSort(std::array<int,arraySize>&_correct,std::array<int,arraySize>&_generated) : Correct(_correct), Generated(_generated)
 {}
 
+bool CocktailSort::validator()
+{
+    for (int i = 1; i < Generated.size(); i++)
+        if (Generated[i] < Generated[i - 1]) 
+            return false;
+    return true;
+}
 
 void CocktailSort::sort(std::array<int,arraySize>&arr)
 {
