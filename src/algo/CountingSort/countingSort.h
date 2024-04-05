@@ -10,7 +10,7 @@ class CountingSort: public algorithm
 {
 public:
     CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
-    void sort();
+    void sort()override;
     bool validator();
 
 public:

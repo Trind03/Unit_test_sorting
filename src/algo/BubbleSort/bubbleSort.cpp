@@ -12,8 +12,9 @@ bool BubbleSort::validator()
             return false;
     return true;
 }
-void BubbleSort::sort(std::array<int,arraySize>&arr)
+void BubbleSort::sort()
 {
+    std::array<int, arraySize>& arr = Generated;
     int i, ii;
     for (i = 0; i < arr.size() - 1; i++)
 

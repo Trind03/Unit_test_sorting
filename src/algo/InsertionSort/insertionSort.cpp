@@ -12,8 +12,10 @@ bool InsertionSort::validator()
             return false;
     return true;
 }
-void InsertionSort::sort(std::array<int,arraySize>&arr) 
+void InsertionSort::sort() 
 {
+    std::array<int, arraySize>& arr = Generated;
+
     int key, j;
     for (int i = 1; i < arr.size(); i++)
     {

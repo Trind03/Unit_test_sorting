@@ -15,8 +15,9 @@ bool CocktailSort::validator()
     return true;
 }
 
-void CocktailSort::sort(std::array<int,arraySize>&arr)
+void CocktailSort::sort()
 {
+    std::array<int, arraySize>& arr = Generated;
     bool swapped = true;
     int sum = 0;
     int start = 0;

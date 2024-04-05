@@ -15,8 +15,9 @@ bool SelectionSort::validator()
     return true;
 }
 
-void SelectionSort::sort(std::array<int,arraySize>&arr) 
+void SelectionSort::sort() 
 { 
+	std::array<int, arraySize>& arr = Generated;
 	int i, j, min_idx; 
 	for (i = 0; i < arr.size()-1; i++)
 	{ 
