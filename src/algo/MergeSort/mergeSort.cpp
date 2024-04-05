@@ -1,4 +1,3 @@
-#pragma once
 #include <array>
 #include "mergeSort.h"
 #include <memory>

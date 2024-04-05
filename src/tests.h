@@ -66,5 +66,6 @@ TEST(Unit_bubbleSort,bubbleSort)
     std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
     Bubblesort->sort(Bubblesort->Generated);
 
-    EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
+    //EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
+    EXPECT_TRUE(Bubblesort->validator());
 }
