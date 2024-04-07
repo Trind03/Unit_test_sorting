@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.28)
 project(sort)
 include(${CMAKE_SOURCE_DIR}/init.cmake)
 
-# Add sub directories and add source paths.
-add_subdirectory(googletest)
 
 add_executable(sort
 ${SOURCE_DIR}/main.cpp
