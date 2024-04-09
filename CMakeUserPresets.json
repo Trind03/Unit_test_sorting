@@ -2,7 +2,16 @@
   "version": 3,
   "configurePresets": 
   [
-    
+    {
+      "name": "Debug",
+      "hidden": false,
+      "description": "Debug build configuration",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
   ]
 }
   
