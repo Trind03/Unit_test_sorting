@@ -6,10 +6,10 @@
 MergeSort::MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Generated(generated), Correct(correct)
 {}
 
-bool MergeSort::validator()
+bool MergeSort::validator(std::array<int,arraySize>&arr)
 {
-    for (int i = 1; i < Generated.size(); i++)
-        if (Generated[i] < Generated[i - 1]) 
+    for (int i = 1; i < arr.size(); i++)
+        if (arr[i] < arr[i - 1]) 
             return false;
     return true;
 }

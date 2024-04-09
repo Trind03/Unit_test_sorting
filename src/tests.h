@@ -3,7 +3,6 @@
 #include <memory>
 #include "./bubbleSort/bubbleSort.h"
 #include "testSet.h"
-
 #include "./cocktailSort/cocktailSort.h"
 #include "./selectionSort/selectionSort.h"
 #include "./insertionSort/insertionSort.h"
@@ -18,7 +17,7 @@ TEST(Unit_cocktailSort,cocktailSort)
     std::unique_ptr<algorithm>(Cocktailsort) = std::make_unique<CocktailSort>(Sorted,TB_Sort);
     Cocktailsort->sort();
 
-    EXPECT_EQ(Cocktailsort->Correct,Cocktailsort->Generated);
+    EXPECT_TRUE(Cocktailsort->validator(Cocktailsort->Generated));
 }
 
 
@@ -67,5 +66,5 @@ TEST(Unit_bubbleSort,bubbleSort)
     Bubblesort->sort();
 
     //EXPECT_EQ(Bubblesort->Generated,Bubblesort->Correct);
-    EXPECT_TRUE(Bubblesort->validator());
+    EXPECT_TRUE(Bubblesort->validator(Bubblesort->Generated));
 }

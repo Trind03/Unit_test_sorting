@@ -1,9 +1,10 @@
+#include <array>
 #include "algorithm.h"
-
-bool algorithm::validator()
+#define arraySize 10000
+bool algorithm::validator(std::array<int,arraySize>&arr)
 {
-    for (int i = 1; i < Generated.size(); i++)
-        if (Generated[i] < Generated[i - 1]) 
+    for (int i = 1; i < arr.size(); i++)
+        if (arr[i] < arr[i - 1]) 
             return false;
     return true;
 }
