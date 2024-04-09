@@ -11,6 +11,16 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
+    },
+    {
+      "name": "Release",
+      "hidden": false,
+      "description": "Release build configuration",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
     }
   ]
 }
