@@ -6,7 +6,13 @@
 MergeSort::MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Generated(generated), Correct(correct)
 {}
 
-
+bool MergeSort::validator(std::array<int,arraySize>&arr)
+{
+    for (int i = 1; i < arr.size(); i++)
+        if (arr[i] < arr[i - 1]) 
+            return false;
+    return true;
+}
 
 
 void MergeSort::sort(int const begin, int const end)
@@ -28,11 +34,8 @@ void MergeSort::merge(int const left, int const mid,int const right)
     int const subArrayOne = mid - left + 1;
     int const subArrayTwo = right - mid;
 
-    //std::unique_ptr<std::array<int,10>>(leftArray) = std::make_unique<std::array<int,10>>(subArrayOne);
-    //std::unique_ptr<std::array<int,10>>(rightArray) = std::make_unique<std::array<int,10>>(subArrayTwo);
 
-    auto *leftArray = new int[subArrayOne],
-         *rightArray = new int[subArrayTwo];
+    int *leftArray = new int[subArrayOne],*rightArray = new int[subArrayTwo];
  
     for (auto i = 0; i < subArrayOne; i++)
         leftArray[i] = array[left + i];

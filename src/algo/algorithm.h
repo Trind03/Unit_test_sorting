@@ -6,7 +6,8 @@ class algorithm
 {
 public:
     void virtual sort() = 0;
-    //bool virtual validator() = 0;
+    bool validator(std::array<int,arraySize>&arr);
+
 
     std::array<int,arraySize>Generated;
     std::array<int,arraySize>Correct;

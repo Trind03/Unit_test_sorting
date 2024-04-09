@@ -5,6 +5,7 @@ include(${CMAKE_SOURCE_DIR}/init.cmake)
 
 add_executable(sort
 ${SOURCE_DIR}/main.cpp
+${Algo}/algorithm.cpp
 ${Algo}/CocktailSort/cocktailSort.cpp
 ${Algo}/BubbleSort/bubblesort.cpp
 ${Algo}/SelectionSort/selectionSort.cpp
