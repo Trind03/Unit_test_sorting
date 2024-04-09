@@ -11,7 +11,6 @@ class CountingSort: public algorithm
 public:
     CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
     void sort()override;
-    bool validator();
 
 public:
     std::array<int,arraySize>Generated;
