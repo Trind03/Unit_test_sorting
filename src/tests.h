@@ -13,7 +13,7 @@
 // Unit test for cocktailSort 
 TEST(Unit_cocktailSort,cocktailSort)
 {
-    std::unique_ptr<algorithm>(Cocktailsort) = std::make_unique<CocktailSort>(Sorted,TB_Sort);
+    std::unique_ptr<algorithm>(Cocktailsort) = std::make_unique<CocktailSort>(TB_Sort);
     Cocktailsort->sort();
 
     EXPECT_TRUE(Cocktailsort->validator(Cocktailsort->Generated));
