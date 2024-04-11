@@ -3,7 +3,7 @@
 #include <memory>
 
 
-MergeSort::MergeSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Generated(generated), Correct(correct)
+MergeSort::MergeSort(std::array<int,arraySize>&generated) : Generated(generated)
 {}
 
 bool MergeSort::validator(std::array<int,arraySize>&arr)

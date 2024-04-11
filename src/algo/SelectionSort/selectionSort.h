@@ -7,10 +7,9 @@
 class SelectionSort : public algorithm
 {
 public:
-    SelectionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
+    SelectionSort(std::array<int,arraySize>&generated);
     void sort() override;
 
 
     std::array<int,arraySize>Generated;
-    std::array<int,arraySize>Correct;
 };

@@ -2,7 +2,7 @@
 #include <array>
 #define arraySize 10000
 
-CocktailSort::CocktailSort(std::array<int,arraySize>&_correct,std::array<int,arraySize>&_generated) : Correct(_correct), Generated(_generated)
+CocktailSort::CocktailSort(std::array<int,arraySize>&_generated) : Generated(_generated)
 {}
 
 void CocktailSort::sort()
