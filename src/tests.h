@@ -23,7 +23,7 @@ TEST(Unit_cocktailSort,cocktailSort)
 // Unit test for selectionSort 
 TEST(Unit_selectionSort,selectionSort)
 {
-    std::unique_ptr<algorithm>(Selectionsort) = std::make_unique<SelectionSort>(Sorted,TB_Sort);
+    std::unique_ptr<algorithm>(Selectionsort) = std::make_unique<SelectionSort>(TB_Sort);
     Selectionsort->sort();
 
     EXPECT_TRUE(Selectionsort->validator(Selectionsort->Generated));
@@ -32,7 +32,7 @@ TEST(Unit_selectionSort,selectionSort)
 // Unit test for insertionsort 
 TEST(Unit_insertionsort,insertionsort)
 {
-    std::unique_ptr<algorithm>(insertionsort) = std::make_unique<InsertionSort>(Sorted,TB_Sort);
+    std::unique_ptr<algorithm>(insertionsort) = std::make_unique<InsertionSort>(TB_Sort);
     insertionsort->sort();
 
     EXPECT_TRUE(insertionsort->validator(insertionsort->Generated));
@@ -41,7 +41,7 @@ TEST(Unit_insertionsort,insertionsort)
 // Unit test for mergesort 
 TEST(Unit_mergeSort,mergesort)
 {
-    std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(Sorted,TB_Sort);
+    std::unique_ptr<MergeSort>(mergeSort) = std::make_unique<MergeSort>(TB_Sort);
     mergeSort->sort(0,9999);
 
     EXPECT_TRUE(mergeSort->validator(mergeSort->Generated));
@@ -52,7 +52,7 @@ TEST(Unit_mergeSort,mergesort)
  
 TEST(Unit_countingSort,countingsort)
 {
-    std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(Sorted,TB_Sort);
+    std::unique_ptr<CountingSort>(countingSort) = std::make_unique<CountingSort>(TB_Sort);
     countingSort->sort();
 
     EXPECT_TRUE(countingSort->validator(countingSort->Generated));
@@ -61,7 +61,7 @@ TEST(Unit_countingSort,countingsort)
 // Unit test for bubbleSort 
 TEST(Unit_bubbleSort,bubbleSort)
 {
-    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(Sorted,TB_Sort);
+    std::unique_ptr<BubbleSort>(Bubblesort) = std::make_unique<BubbleSort>(TB_Sort);
     Bubblesort->sort();
 
     EXPECT_TRUE(Bubblesort->validator(Bubblesort->Generated));
