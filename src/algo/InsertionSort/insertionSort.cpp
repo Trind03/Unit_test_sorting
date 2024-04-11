@@ -2,7 +2,7 @@
 #include "insertionSort.h"
 #define arraySize 10000
 
-InsertionSort::InsertionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct),Generated(generated)
+InsertionSort::InsertionSort(std::array<int,arraySize>&generated): Generated(generated)
 {}
 
 

@@ -4,7 +4,7 @@
 #define arraySize 10000
 
 
-SelectionSort::SelectionSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated) : Correct(correct), Generated(generated)
+SelectionSort::SelectionSort(std::array<int,arraySize>&generated) : Generated(generated)
 {};
 
 

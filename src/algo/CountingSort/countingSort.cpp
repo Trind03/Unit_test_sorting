@@ -2,7 +2,7 @@
 #include "countingSort.h"
 #define arraySize 10000
 
-CountingSort::CountingSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated): Correct(correct), Generated(generated)
+CountingSort::CountingSort(std::array<int,arraySize>&generated): Generated(generated)
 {}
 
 

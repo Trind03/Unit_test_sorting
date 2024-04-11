@@ -7,9 +7,8 @@
 class CocktailSort : public algorithm
 {
 public:
-    CocktailSort(std::array<int,arraySize>&correct,std::array<int,arraySize>&generated);
+    CocktailSort(std::array<int,arraySize>&generated);
     void sort() override;
 
     std::array<int,arraySize>Generated;
-    std::array<int,arraySize>Correct;
 };
