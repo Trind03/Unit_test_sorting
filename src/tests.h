@@ -71,7 +71,7 @@ TEST(Unit_bubbleSort,bubbleSort)
 TEST(Unit_QuickSort,QuickSort)
 {
     std::unique_ptr<QuickSort>(Quicksort) = std::make_unique<QuickSort>(TB_Sort);
-    Quicksort->sort();
+    Quicksort->sort(Quicksort->Generated,0,9999);
 
     EXPECT_TRUE(Quicksort->validator(Quicksort->Generated));
 }
