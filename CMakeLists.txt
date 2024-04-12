@@ -12,6 +12,7 @@ ${Algo}/SelectionSort/selectionSort.cpp
 ${Algo}/InsertionSort/insertionSort.cpp
 ${Algo}/MergeSort/mergeSort.cpp
 ${Algo}/CountingSort/countingSort.cpp
+${Algo}/QuickSort/QuickSort.cpp
 )
 
 target_link_libraries(sort gtest gtest_main)

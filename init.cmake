@@ -17,5 +17,6 @@ include_directories(
     ${Algo}/InsertionSort
     ${Algo}/MergeSort
     ${Algo}/CountingSort
+    ${Algo}/QuickSort
     ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
 )

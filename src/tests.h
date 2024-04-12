@@ -8,7 +8,7 @@
 #include "./insertionSort/insertionSort.h"
 #include "./mergeSort/mergeSort.h"
 #include "./countingSort/countingSort.h"
-
+#include "./QuickSort/QuickSort.h"
 
 // Unit test for cocktailSort 
 TEST(Unit_cocktailSort,cocktailSort)
@@ -65,4 +65,13 @@ TEST(Unit_bubbleSort,bubbleSort)
     Bubblesort->sort();
 
     EXPECT_TRUE(Bubblesort->validator(Bubblesort->Generated));
+}
+
+// Unit test for QuickSort 
+TEST(Unit_QuickSort,QuickSort)
+{
+    std::unique_ptr<QuickSort>(Quicksort) = std::make_unique<QuickSort>(TB_Sort);
+    Quicksort->sort(Quicksort->Generated,0,9999);
+
+    EXPECT_TRUE(Quicksort->validator(Quicksort->Generated));
 }
