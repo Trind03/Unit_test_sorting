@@ -1,7 +1,14 @@
 #include <algorithm>
 #include <array>
+#include "QuickSort.h"
 #define arraySize 10000
-int sort(std::array<int,arraySize>arr,int low,int high)
+
+QuickSort::QuickSort(std::array<int,arraySize>&arr)
+{
+  Generated = arr;
+}
+
+int QuickSort::quickSort(std::array<int,arraySize>&arr,int low,int high)
 {
   //choose the pivot
   
@@ -26,19 +33,21 @@ int sort(std::array<int,arraySize>arr,int low,int high)
 
 // The Quicksort function Implement
            
-void quickSort(std::array<int,arraySize>arr,int low,int high)
+void QuickSort::sort()
 {
+  std::array<int,arraySize>&arr = Generated;
+  int low = 0, high = 9999;
   // when low is less than high
   if(low<high)
   {
     // pi is the partition return index of pivot
     
-    int pi = sort(arr,low,high);
+    int pi = quickSort(arr,low,high);
     
     //Recursion Call
     //smaller element than pivot goes left and
     //higher element goes right
-    quickSort(arr,low,pi-1);
-    quickSort(arr,pi+1,high);
+    sort();
+    sort();
   }
 }
