@@ -7,7 +7,7 @@ add_executable(sort
 ${SOURCE_DIR}/main.cpp
 ${Algo}/algorithm.cpp
 ${Algo}/CocktailSort/cocktailSort.cpp
-${Algo}/BubbleSort/bubblesort.cpp
+${Algo}/BubbleSort/bubbleSort.cpp
 ${Algo}/SelectionSort/selectionSort.cpp
 ${Algo}/InsertionSort/insertionSort.cpp
 ${Algo}/MergeSort/mergeSort.cpp

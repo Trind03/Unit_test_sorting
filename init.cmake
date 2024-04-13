@@ -6,17 +6,27 @@ add_subdirectory(googletest)
 
 # Primary directories 
 set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/src")
-set(Algo "${SOURCE_DIR}/algo")
+set(Algo "${CMAKE_SOURCE_DIR}/src/algo")
+
+
+set(CocktailSort "${Algo}/CocktailSort")
+set(BubbleSort "${Algo}/BubbleSort")
+set(SelectionSort "${Algo}/SelectionSort")
+set(InsertionSort "${Algo}/InsertionSort")
+set(MergeSort "${Algo}/MergeSort")
+set(CountingSort "${Algo}/CountingSort")
+set(QuickSort "${Algo}/QuickSort")
+
 
 include_directories(
     ${SOURCE_DIR}
     ${Algo}
-    ${Algo}/CocktailSort
-    ${Algo}/BubbleSort
-    ${Algo}/SelectionSort
-    ${Algo}/InsertionSort
-    ${Algo}/MergeSort
-    ${Algo}/CountingSort
-    ${Algo}/QuickSort
+    ${CocktailSort}/CocktailSort
+    ${BubbleSort}/BubbleSort
+    ${SelectionSort}/SelectionSort
+    ${InsertionSort}/InsertionSort
+    ${MergeSort}/MergeSort
+    ${CountingSort}/CountingSort
+    ${QuickSort}/QuickSort
     ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
 )
