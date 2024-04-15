@@ -28,11 +28,11 @@ void QuickSort::sort(std::array<int, arraySize>& arr, int low, int high) {
         sort(arr, pi + 1, high);
     }
 }
-
+/*
 bool QuickSort::validator(std::array<int,arraySize>&arr)
 {
     for (int i = 1; i < arr.size(); i++)
         if (arr[i] < arr[i - 1]) 
             return false;
     return true;
-}
+}*/

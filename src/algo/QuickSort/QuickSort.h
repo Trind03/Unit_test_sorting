@@ -7,7 +7,7 @@ class QuickSort : public algorithm
 {
 public:
     QuickSort(std::array<int,arraySize>&arr);
-    bool validator(std::array<int,arraySize>&arr);
+    //bool validator(std::array<int,arraySize>&arr);
 
     void sort(std::array<int,arraySize>&arr,int low,int high);
     int quickSort(std::array<int, arraySize>& arr, int low, int high);
