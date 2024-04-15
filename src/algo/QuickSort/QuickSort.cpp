@@ -20,8 +20,7 @@ int QuickSort::quickSort(std::array<int, arraySize>& arr, int low, int high) {
     return (i + 1);
 }
 
-// The Quicksort function Implement
-           
+// The Quicksort function Implement       
 void QuickSort::sort(std::array<int, arraySize>& arr, int low, int high) {
     if (low < high) {
         int pi = quickSort(arr, low, high);
@@ -30,10 +29,10 @@ void QuickSort::sort(std::array<int, arraySize>& arr, int low, int high) {
     }
 }
 
-    bool QuickSort::validator(std::array<int,arraySize>&arr)
-    {
-        for (int i = 1; i < arr.size(); i++)
-            if (arr[i] < arr[i - 1]) 
-                return false;
-        return true;
-    }
+bool QuickSort::validator(std::array<int,arraySize>&arr)
+{
+    for (int i = 1; i < arr.size(); i++)
+        if (arr[i] < arr[i - 1]) 
+            return false;
+    return true;
+}

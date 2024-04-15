@@ -9,3 +9,5 @@ bool algorithm::validator(std::array<int,arraySize>&arr)
             return false;
     return true;
 }
+void algorithm::sort()
+{}
