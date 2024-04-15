@@ -4,10 +4,8 @@
 #include <iostream>
 #define arraySize 10000
 
-QuickSort::QuickSort(std::array<int,arraySize>&arr)
-{
-  Generated = arr;
-}
+QuickSort::QuickSort(std::array<int,arraySize>&arr): Generated(arr)
+{}
 
 int QuickSort::quickSort(std::array<int, arraySize>& arr, int low, int high) {
     int pivot = arr[high];
