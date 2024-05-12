@@ -1,8 +1,9 @@
 #pragma once 
 #include <array>
+#include "algorithm.h"
 #define arraySize 10000
 
-class MergeSort
+class MergeSort: public algorithm
 {
 public:
     MergeSort(std::array<int,arraySize>&generated);
